@@ -1,0 +1,1289 @@
+[
+  {
+    "text": "Practice Test 1: Practice Test #1 - Full Exam - AWS Certified\nMachine Learning Engineer - Associate (MLA-C01)\nPractice Test #1 - Full Exam - AWS Certified\nMachine Learning Engineer - Associate (MLA-\nC01) - Results\nAttempt 2\n•\nQuestion 8\nIncorrect\nYou are an ML engineer at a startup that is developing a\nrecommendation engine for an e-commerce platform. The\nworkload involves training models on large datasets and\ndeploying them to serve real-time recommendations to\ncustomers. The training jobs are sporadic but require significant\ncomputational power, while the inference workloads must handle\nvarying traffic throughout the day. The company is cost-\nconscious and aims to balance cost efficiency with the need for\nscalability and performance.\nGiven these requirements, which approach to resource allocation\nis the MOST SUITABLE for training and inference, and why?\nUse provisioned resources with reserved instances for both\ntraining and inference to lock in lower costs and guarantee",
+    "chunk_id": 0,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "is the MOST SUITABLE for training and inference, and why?\nUse provisioned resources with reserved instances for both\ntraining and inference to lock in lower costs and guarantee\nresource availability, ensuring predictability in budgeting\nYour answer is incorrect",
+    "chunk_id": 1,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use provisioned resources with spot instances for both training\nand inference to take advantage of the lowest possible costs,\naccepting the potential for interruptions during workload\nexecution\nUse on-demand instances for both training and inference to\nensure that the company only pays for the compute resources it\nuses when it needs them, avoiding any upfront commitments\nCorrect answer\nUse on-demand instances for training, allowing the flexibility to\nscale resources as needed, and use provisioned resources with\nauto-scaling for inference to handle varying traffic while\ncontrolling costs\nOverall explanation\nCorrect option:\nUse on-demand instances for training, allowing the flexibility to\nscale resources as needed, and use provisioned resources with\nauto-scaling for inference to handle varying traffic while\ncontrolling costs\nUsing on-demand instances for training offers flexibility, allowing\nyou to allocate resources only when needed, which is ideal for",
+    "chunk_id": 2,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "controlling costs\nUsing on-demand instances for training offers flexibility, allowing\nyou to allocate resources only when needed, which is ideal for\nsporadic training jobs. For inference, provisioned resources with\nauto-scaling ensure that the system can handle varying traffic\nwhile controlling costs, as it can scale down during periods of\nlow demand.",
+    "chunk_id": 3,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://aws.amazon.com/ec2/pricing/\nIncorrect options:\nUse on-demand instances for both training and inference to\nensure that the company only pays for the compute resources it\nuses when it needs them, avoiding any upfront commitments -\nOn-demand instances are flexible and ensure that you only pay\nfor what you use, but they can be more expensive over time\ncompared to provisioned resources, especially if workloads are\nconsistent and predictable. This approach may be suboptimal for\ncost-sensitive long-term use.\nUse provisioned resources with reserved instances for both\ntraining and inference to lock in lower costs and guarantee\nresource availability, ensuring predictability in budgeting -\nProvisioned resources with reserved instances provide cost\nsavings and guaranteed availability but lack the flexibility needed\nfor sporadic training jobs. For inference workloads with\nfluctuating demand, this approach might not handle traffic spikes",
+    "chunk_id": 4,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "savings and guaranteed availability but lack the flexibility needed\nfor sporadic training jobs. For inference workloads with\nfluctuating demand, this approach might not handle traffic spikes\nefficiently without additional auto-scaling mechanisms.\nUse provisioned resources with spot instances for both training\nand inference to take advantage of the lowest possible costs,\naccepting the potential for interruptions during workload\nexecution - Spot instances provide significant cost savings but\ncome with the risk of interruptions, which can be problematic for\nboth training and real-time inference workloads. This option is\ngenerally better suited for non-critical batch jobs where\ninterruptions can be tolerated.\nReferences:\nhttps://aws.amazon.com/ec2/pricing/\nhttps://aws.amazon.com/ec2/pricing/reserved-instances/\nhttps://aws.amazon.com/ec2/spot/\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-\nauto-scaling-prerequisites.html\nDomain\nDeployment and Orchestration of ML Workflows",
+    "chunk_id": 5,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "https://aws.amazon.com/ec2/spot/\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-\nauto-scaling-prerequisites.html\nDomain\nDeployment and Orchestration of ML Workflows\nQuestion 11",
+    "chunk_id": 6,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Incorrect\nA manufacturing company is building an anomaly detection\nsystem to identify defective products in its production lines. The\ndatasets include sensor logs from IoT devices stored in Amazon\nS3 and a list of production metadata from an on-premises SQL\ndatabase.\nThe company must:\nAggregate and preprocess the data from multiple sources.\nImplement a solution to detect anomalies automatically in the\nsensor data.\nVisualize the results for analysis by the operations team.\nWhich solution will meet these requirements most efficiently?\nYour answer is incorrect\nUse Amazon Kinesis Data Streams to process and analyze the\nsensor data in real time for anomaly detection. Use Amazon\nQuickSight to visualize the results\nCorrect answer\nUse Amazon SageMaker Data Wrangler to aggregate, clean, and\nprepare data for anomaly detection while generating visual\ninsights\nUse Amazon Athena to query the sensor data and identify\nanomalies through SQL queries. Use Amazon QuickSight to\nvisualize the results",
+    "chunk_id": 7,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "insights\nUse Amazon Athena to query the sensor data and identify\nanomalies through SQL queries. Use Amazon QuickSight to\nvisualize the results\nUse Amazon EMR with Spark MLlib to run anomaly detection\nalgorithms and visualize the results using custom dashboards\nOverall explanation\nCorrect option:\nUse Amazon SageMaker Data Wrangler to aggregate, clean, and\nprepare data for anomaly detection while generating visual\ninsights\nAmazon SageMaker Data Wrangler is a managed service\ndesigned to simplify data aggregation, cleaning, and feature",
+    "chunk_id": 8,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "engineering for machine learning workflows. It connects\nseamlessly to data sources like Amazon S3 and SQL databases,\nallowing engineers to preprocess large datasets and detect\nanomalies efficiently. It also provides built-in visualizations for\nanalyzing trends, correlations, and outliers.\nKey Benefits:\nIntegrates with Amazon S3 and on-premises databases for data\naggregation.\nProvides built-in anomaly detection tools and visual insights for\nstreamlined analysis.\nSimplifies feature engineering and model input preparation.\nSageMaker Data Wrangler:\nvia - https://aws.amazon.com/sagemaker-ai/data-wrangler/\nIncorrect options:\nUse Amazon Kinesis Data Streams to process and analyze the\nsensor data in real time for anomaly detection. Use Amazon\nQuickSight to visualize the results - Amazon Kinesis Data\nStreams is designed for real-time data ingestion and streaming.\nWhile it can process large volumes of sensor data in real time, it\ndoes not include built-in anomaly detection capabilities or",
+    "chunk_id": 9,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Streams is designed for real-time data ingestion and streaming.\nWhile it can process large volumes of sensor data in real time, it\ndoes not include built-in anomaly detection capabilities or\nsupport data aggregation and preprocessing for machine\nlearning workflows. Additional services like Amazon SageMaker\nor custom code would be required to analyze anomalies, thereby\nincreasing complexity for the solution.",
+    "chunk_id": 10,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use Amazon Athena to query the sensor data and identify\nanomalies through SQL queries. Use Amazon QuickSight to\nvisualize the results - Athena is a query service that allows\nrunning SQL queries directly on Amazon S3 data. While useful for\nad hoc analysis, it does not support automatic anomaly detection\nor data preprocessing, making it less suitable for this use case.\nUse Amazon EMR with Spark MLlib to run anomaly detection\nalgorithms and visualize the results using custom dashboards -\nWhile EMR with Spark MLlib is powerful for anomaly detection, it\nrequires significant manual configuration, coding, and operational\noverhead. Custom dashboards for visualization further add\ncomplexity compared to SageMaker Data Wrangler.\nReferences:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/data-\nwrangler.html\nhttps://aws.amazon.com/sagemaker-ai/data-wrangler/\nDomain\nData Preparation for Machine Learning (ML)\nQuestion 12\nIncorrect\nYou are a data scientist at a healthcare startup tasked with",
+    "chunk_id": 11,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "wrangler.html\nhttps://aws.amazon.com/sagemaker-ai/data-wrangler/\nDomain\nData Preparation for Machine Learning (ML)\nQuestion 12\nIncorrect\nYou are a data scientist at a healthcare startup tasked with\ndeveloping a machine learning model to predict the likelihood of\npatients developing a specific chronic disease within the next five\nyears. The dataset available includes patient demographics,\nmedical history, lab results, and lifestyle factors, but it is relatively\nsmall, with only 1,000 records. Additionally, the dataset has\nmissing values in some critical features, and the class distribution\nis highly imbalanced, with only 5% of patients labeled as having\ndeveloped the disease.\nGiven the data limitations and the complexity of the problem,\nwhich of the following approaches is the MOST LIKELY to\ndetermine the feasibility of an ML solution and guide your next\nsteps?\nYour answer is incorrect",
+    "chunk_id": 12,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Increase the dataset size by generating synthetic data and then\ntrain a simple logistic regression model to avoid overfitting\nProceed with training a deep neural network (DNN) model using\nthe available data, as DNNs can handle small datasets by\nlearning complex patterns\nCorrect answer\nConduct exploratory data analysis (EDA) to understand the data\ndistribution, address missing values, and assess the class\nimbalance before determining if an ML solution is feasible\nImmediately apply an oversampling technique to balance the\ndataset, then train an XGBoost model to maximize performance\non the minority class\nOverall explanation\nCorrect option:\nConduct exploratory data analysis (EDA) to understand the data\ndistribution, address missing values, and assess the class\nimbalance before determining if an ML solution is feasible\nConducting exploratory data analysis (EDA) is the most\nappropriate first step. EDA allows you to understand the data",
+    "chunk_id": 13,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "imbalance before determining if an ML solution is feasible\nConducting exploratory data analysis (EDA) is the most\nappropriate first step. EDA allows you to understand the data\ndistribution, identify and address missing values, and assess the\nextent of the class imbalance. This process helps determine\nwhether the available data is sufficient to build a reliable model\nand what preprocessing steps might be necessary.",
+    "chunk_id": 14,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://aws.amazon.com/blogs/machine-learning/\nexploratory-data-analysis-feature-engineering-and-\noperationalizing-your-data-flow-into-your-ml-pipeline-with-\namazon-sagemaker-data-wrangler/\nIncorrect options:\nProceed with training a deep neural network (DNN) model using\nthe available data, as DNNs can handle small datasets by\nlearning complex patterns - Training a deep neural network on a\nsmall dataset is not advisable, as DNNs typically require large\namounts of data to perform well and avoid overfitting.\nAdditionally, jumping directly to model training without assessing\nthe data first may lead to poor results.\nIncrease the dataset size by generating synthetic data and then\ntrain a simple logistic regression model to avoid overfitting -\nWhile generating synthetic data can help increase the dataset\nsize, it may introduce biases if not done carefully. Additionally,\nwithout first understanding the data through EDA, you risk",
+    "chunk_id": 15,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "While generating synthetic data can help increase the dataset\nsize, it may introduce biases if not done carefully. Additionally,\nwithout first understanding the data through EDA, you risk\napplying the wrong strategy or misinterpreting the results.\nImmediately apply an oversampling technique to balance the\ndataset, then train an XGBoost model to maximize performance\non the minority class - Although oversampling can address class\nimbalance, it’s important to first understand the underlying data\nissues through EDA. Oversampling should not be the immediate\nnext step without understanding the data quality, feature\nimportance, and potential need for feature engineering.\nReferences:\nhttps://aws.amazon.com/blogs/machine-learning/exploratory-\ndata-analysis-feature-engineering-and-operationalizing-your-\ndata-flow-into-your-ml-pipeline-with-amazon-sagemaker-data-\nwrangler/\nhttps://aws.amazon.com/blogs/machine-learning/use-amazon-\nsagemaker-canvas-for-exploratory-data-analysis/\nDomain",
+    "chunk_id": 16,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "data-flow-into-your-ml-pipeline-with-amazon-sagemaker-data-\nwrangler/\nhttps://aws.amazon.com/blogs/machine-learning/use-amazon-\nsagemaker-canvas-for-exploratory-data-analysis/\nDomain\nML Model Development\nQuestion 16",
+    "chunk_id": 17,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Incorrect\nA fintech company is developing an AI-driven fraud detection\nsystem using Amazon SageMaker. The system must provide\nend-to-end ML capabilities, including data preprocessing, model\ntraining, versioned model storage, deployment, and monitoring.\nCustomer transaction data is stored securely in Amazon S3.\nThe company requires the following:\nSecure access to training data for different ML workflows to\nensure data isolation.\nA centralized model registry to manage model versions and\ndeployments with minimal operational overhead.\nWhat is the most appropriate approach to meet these\nrequirements with the LEAST operational overhead?\nUse Amazon Elastic Container Registry (Amazon ECR) to store\nmodel artifacts and versions\nUse unique tags for each model version and use SageMaker\nModel Registry to manage model deployments\nCorrect answer\nUse SageMaker Model Registry to manage model versions and\nassociate models with model groups\nYour answer is incorrect",
+    "chunk_id": 18,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Model Registry to manage model deployments\nCorrect answer\nUse SageMaker Model Registry to manage model versions and\nassociate models with model groups\nYour answer is incorrect\nUse Amazon S3 versioning to track model artifacts and manage\ndeployments manually\nOverall explanation\nCorrect option:\nUse SageMaker Model Registry to manage model versions and\nassociate models with model groups\nAmazon SageMaker Model Registry is purpose-built for storing,\nversioning, and managing ML models as part of the SageMaker\necosystem. It allows users to organize models into model groups,\nwhich act as containers for different versions of a model. This\nfeature integrates seamlessly with SageMaker workflows like",
+    "chunk_id": 19,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "training, deployment, and monitoring, reducing operational\noverhead while maintaining robust version control.\nBy using SageMaker Model Registry:\nDifferent versions of a model can be tracked and managed\nefficiently.\nSecure and isolated use of training data can be implemented by\nleveraging IAM roles and SageMaker training jobs.\nDeployment pipelines can be automated using SageMaker\nendpoints, further reducing manual intervention.\nModel Registry Models, Model Versions, and Model Groups:\nvia - https://docs.aws.amazon.com/sagemaker/latest/dg/model-\nregistry.html\nIncorrect options:\nUse Amazon Elastic Container Registry (Amazon ECR) to store\nmodel artifacts and versions - Amazon ECR is designed for\nstoring and managing container images, not directly for ML\nmodel versioning. While SageMaker models might use Docker\ncontainers stored in ECR for deployment, ECR does not provide\ncapabilities like tracking model metadata, associating models",
+    "chunk_id": 20,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "with model groups, or automating versioning. This would add\noperational overhead.\nUse unique tags for each model version and use SageMaker\nModel Registry to manage model deployments - While unique\ntags can help organize models, SageMaker Model Registry\nalready provides built-in capabilities for versioning and organizing\nmodels through model groups. Adding tags would add\nunnecessary complexity and does not add significant benefits\nover using model groups.\nUse Amazon S3 versioning to track model artifacts and manage\ndeployments manually - Amazon S3 versioning can track\ndifferent versions of objects (artifacts), but it does not offer a\ncentralized model registry or automated ML lifecycle\nmanagement. Managing deployments manually increases\noverhead, making this approach inefficient.\nReferences:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/model-\nregistry.html\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/model-\nregistry-deploy.html\nDomain",
+    "chunk_id": 21,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "References:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/model-\nregistry.html\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/model-\nregistry-deploy.html\nDomain\nML Solution Monitoring, Maintenance, and Security\nQuestion 20\nIncorrect\nYou are a data scientist at a financial technology company\ndeveloping a fraud detection system. The system needs to\nidentify fraudulent transactions in real-time based on patterns in\ntransaction data, including amounts, locations, times, and\naccount histories. The dataset is large and highly imbalanced,\nwith only a small percentage of transactions labeled as\nfraudulent. Your team has access to Amazon SageMaker and is\nconsidering various built-in algorithms to build the model.\nGiven the need for both high accuracy and the ability to handle\nimbalanced data, which SageMaker built-in algorithm is the\nMOST SUITABLE for this use case?",
+    "chunk_id": 22,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Correct answer\nApply the XGBoost algorithm with a custom objective function to\noptimize for precision and recall\nImplement the K-Nearest Neighbors (k-NN) algorithm to classify\ntransactions based on similarity to known fraudulent cases\nSelect the Random Cut Forest (RCF) algorithm for its ability to\ndetect anomalies in transaction data\nYour answer is incorrect\nUse the Linear Learner algorithm with weighted classification to\naddress the class imbalance\nOverall explanation\nCorrect option:\nApply the XGBoost algorithm with a custom objective function to\noptimize for precision and recall\nThe XGBoost (eXtreme Gradient Boosting) is a popular and\nefficient open-source implementation of the gradient boosted\ntrees algorithm. Gradient boosting is a supervised learning\nalgorithm that tries to accurately predict a target variable by\ncombining multiple estimates from a set of simpler models. The\nXGBoost algorithm performs well in machine learning\ncompetitions for the following reasons:",
+    "chunk_id": 23,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "combining multiple estimates from a set of simpler models. The\nXGBoost algorithm performs well in machine learning\ncompetitions for the following reasons:\nIts robust handling of a variety of data types, relationships,\ndistributions.\nThe variety of hyperparameters that you can fine-tune.\nXGBoost is a powerful gradient boosting algorithm that excels in\nstructured data problems, such as fraud detection. It allows for\ncustom objective functions, making it highly suitable for\noptimizing precision and recall, which are critical in imbalanced\ndatasets. Additionally, XGBoost has built-in techniques for\nhandling class imbalance, such as scale_pos_weight.\nIncorrect options:",
+    "chunk_id": 24,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use the Linear Learner algorithm with weighted classification to\naddress the class imbalance - The Linear Learner algorithm can\nhandle classification tasks, and weighting classes can help with\nimbalance. However, it may not be as effective in capturing\ncomplex patterns in the data as more sophisticated algorithms\nlike XGBoost.\nSelect the Random Cut Forest (RCF) algorithm for its ability to\ndetect anomalies in transaction data - Random Cut Forest (RCF)\nis designed for anomaly detection, which can be relevant for\nfraud detection. However, RCF is unsupervised and may not\nleverage the labeled data effectively, leading to suboptimal\nresults in a supervised classification task like this.\nImplement the K-Nearest Neighbors (k-NN) algorithm to classify\ntransactions based on similarity to known fraudulent cases - K-\nNearest Neighbors (k-NN) can classify based on similarity, but it\ndoes not scale well with large datasets and may struggle with the",
+    "chunk_id": 25,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "transactions based on similarity to known fraudulent cases - K-\nNearest Neighbors (k-NN) can classify based on similarity, but it\ndoes not scale well with large datasets and may struggle with the\nhigh-dimensional, imbalanced nature of the data in this context.\nReferences:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/\nxgboost.html\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/\nxgboost_hyperparameters.html\nhttps://aws.amazon.com/blogs/gametech/fraud-detection-for-\ngames-using-machine-learning/\nhttps://d1.awsstatic.com/events/reinvent/2019/\nREPEAT_1_Build_a_fraud_detection_system_with_Amazon_Sage\nMaker_AIM359-R1.pdf\nDomain\nML Model Development\nQuestion 24\nIncorrect\nA healthcare company is deploying an ML model to predict\npatient readmission rates using Amazon SageMaker. The\ncompany’s ML engineer is setting up a CI/CD pipeline using AWS\nCodePipeline to automate the model retraining and deployment",
+    "chunk_id": 26,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "process. The pipeline must automatically trigger when new\ntraining data is uploaded to an Amazon S3 bucket. The goal is to\nretrain the model and deploy it for real-time inference. Given this\ncontext, consider the following steps:\n1. The pipeline deploys the model version in SageMaker Model\nMonitor for real-time inferences.\n2. A new data upload triggers the pipeline via an Amazon S3\nevent notification.\n3. The pipeline deploys the retrained model to a SageMaker\nendpoint for real-time predictions.\n4. Amazon SageMaker retrains the model using updated data\nstored in the S3 bucket.\n5. An S3 Lifecycle rule attempts to start the pipeline when\nfresh data arrives.\nWhich three steps should be selected and ordered correctly to\nconfigure the pipeline?\nYour answer is incorrect\n2,4,1\n5,4,1\nCorrect answer\n2,4,3\n5,4,3\nOverall explanation\nCorrect option:\n2,4,3\n1. A new data upload triggers the pipeline via an Amazon S3\nevent notification.\nAmazon S3 event notifications can be configured to",
+    "chunk_id": 27,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Correct answer\n2,4,3\n5,4,3\nOverall explanation\nCorrect option:\n2,4,3\n1. A new data upload triggers the pipeline via an Amazon S3\nevent notification.\nAmazon S3 event notifications can be configured to\nautomatically trigger the CI/CD pipeline in AWS CodePipeline\nwhen new training data is uploaded. This ensures that the\npipeline starts automatically without manual intervention.",
+    "chunk_id": 28,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "1. Amazon SageMaker retrains the model using updated data\nstored in the S3 bucket.\nAfter the pipeline is triggered, Amazon SageMaker retrains the\nmodel using the updated training data in the S3 bucket. This step\nis essential for ensuring the model reflects the most recent data.\n1. The pipeline deploys the retrained model to a SageMaker\nendpoint for real-time predictions.\nOnce the model is retrained, the CI/CD pipeline automatically\ndeploys the updated model to a SageMaker endpoint for real-\ntime inference.\nIncorrect options:\n2,4,1\n5,4,1\nSageMaker Model Monitor is designed to detect drift and\nmonitor model quality after deployment. You cannot deploy a\nmodel to SageMaker Model Monitor. Rather, deploying a model\nto a SageMaker endpoint ensures it serves real-time predictions,\naligning with the question's deployment requirement. So, both\nthese options are incorrect.\n5,4,3 - S3 Lifecycle rules are used to transition or expire objects",
+    "chunk_id": 29,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "aligning with the question's deployment requirement. So, both\nthese options are incorrect.\n5,4,3 - S3 Lifecycle rules are used to transition or expire objects\nbased on predefined policies. They cannot invoke pipelines or\ntrigger actions when data is uploaded. So, this option is\nincorrect.\nReference:\nhttps://docs.aws.amazon.com/codebuild/latest/userguide/how-\nto-create-pipeline.html\nDomain\nDeployment and Orchestration of ML Workflows\nQuestion 25\nIncorrect\nYou are a machine learning engineer at a biotech company\ndeveloping a custom deep learning model for analyzing genomic\ndata. The model relies on a specific version of TensorFlow with\ncustom Python libraries and dependencies that are not available\nin the standard SageMaker environments. To ensure compatibility",
+    "chunk_id": 30,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "and flexibility, you decide to use the \"Bring Your Own Container\"\n(BYOC) approach with Amazon SageMaker for both training and\ninference.\nGiven this scenario, which steps are MOST IMPORTANT for\nsuccessfully deploying your custom container with SageMaker,\nensuring that it meets the company’s requirements?\nPackage the model as a SageMaker-compatible file, upload it to\nAmazon S3, and use a pre-built SageMaker container for training,\nensuring that the training job uses the custom environment\nCorrect answer\nCreate a Docker container with the required environment, push\nthe container image to Amazon ECR (Elastic Container Registry),\nand use SageMaker’s Script Mode to execute the training script\nwithin the container\nDeploy the model locally using Docker, then use the AWS\nManagement Console to manually copy the environment and\nmodel files to a SageMaker instance for training\nYour answer is incorrect\nBuild a Docker container with the required TensorFlow version",
+    "chunk_id": 31,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Management Console to manually copy the environment and\nmodel files to a SageMaker instance for training\nYour answer is incorrect\nBuild a Docker container with the required TensorFlow version\nand dependencies, push the container image to Docker Hub, and\nreference the image in SageMaker when creating the training job\nOverall explanation\nCorrect option:\nCreate a Docker container with the required environment, push\nthe container image to Amazon ECR (Elastic Container Registry),\nand use SageMaker’s Script Mode to execute the training script\nwithin the container\nScript mode enables you to write custom training and inference\ncode while still utilizing common ML framework containers\nmaintained by AWS.\nSageMaker supports most of the popular ML frameworks\nthrough pre-built containers, and has taken the extra step to",
+    "chunk_id": 32,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "optimize them to work especially well on AWS compute and\nnetwork infrastructure in order to achieve near-linear scaling\nefficiency. These pre-built containers also provide some\nadditional Python packages, such as Pandas and NumPy, so you\ncan write your own code for training an algorithm. These\nframeworks also allow you to install any Python package hosted\non PyPi by including a requirements.txt file with your training\ncode or to include your own code directories.\nThis is the correct approach for using the BYOC strategy with\nSageMaker. You build a Docker container that includes the\nrequired TensorFlow version and custom dependencies, then\npush the image to Amazon ECR. SageMaker can reference this\nimage to create training jobs and deploy endpoints. By using\nScript Mode, you can execute your custom training script within\nthe container, ensuring compatibility with your specific\nenvironment.",
+    "chunk_id": 33,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://aws.amazon.com/blogs/machine-learning/bring-\nyour-own-model-with-amazon-sagemaker-script-mode/\nIncorrect options:\nBuild a Docker container with the required TensorFlow version\nand dependencies, push the container image to Docker Hub, and",
+    "chunk_id": 34,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "reference the image in SageMaker when creating the training job\n- While Docker Hub can be used to host container images,\nAmazon SageMaker is optimized to work with images stored in\nAmazon ECR, providing better security, performance, and\nintegration with AWS services. Additionally, using Docker Hub for\nproduction ML workloads may pose security and compliance\nrisks.\nPackage the model as a SageMaker-compatible file, upload it to\nAmazon S3, and use a pre-built SageMaker container for training,\nensuring that the training job uses the custom environment - This\noption describes a standard SageMaker workflow using pre-built\ncontainers, which does not provide the customization required by\nthe BYOC approach. SageMaker pre-built containers may not\nsupport the specific custom libraries and dependencies your\nmodel requires.\nDeploy the model locally using Docker, then use the AWS\nManagement Console to manually copy the environment and\nmodel files to a SageMaker instance for training - Manually",
+    "chunk_id": 35,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "model requires.\nDeploy the model locally using Docker, then use the AWS\nManagement Console to manually copy the environment and\nmodel files to a SageMaker instance for training - Manually\ndeploying the model and environment locally and then copying\nfiles to SageMaker instances is not scalable or maintainable.\nSageMaker BYOC allows for a more robust, automated, and\nintegrated solution.\nReferences:\nhttps://aws.amazon.com/blogs/machine-learning/bring-your-\nown-model-with-amazon-sagemaker-script-mode/\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/docker-\ncontainers.html\nDomain\nDeployment and Orchestration of ML Workflows\nQuestion 26\nIncorrect\nA financial services company is developing an AI-based credit\nrisk assessment system using Amazon SageMaker. The system\nneeds to support end-to-end ML workflows, including\nexperimentation, model training, version management,",
+    "chunk_id": 36,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "deployment, and monitoring. To comply with internal governance\npolicies, the company requires a manual approval-based\nworkflow to ensure that only approved models can be deployed\nto production endpoints. All training data should be securely\nstored in Amazon S3, and the models should be managed\nthrough a centralized system.\nWhich solution will best meet these requirements?\nCorrect answer\nUse SageMaker Pipelines with conditional steps to implement\nmanual approval workflows for model deployment\nUse Amazon SageMaker Lineage Tracking to validate and\napprove models before deployment\nYour answer is incorrect\nUse Amazon SageMaker Model Monitor to validate and approve\nmodels before deployment\nUse AWS CodePipeline to manage deployments and set manual\napproval actions for endpoint updates\nOverall explanation\nCorrect option:\nUse SageMaker Pipelines with conditional steps to implement\nmanual approval workflows for model deployment\nAmazon SageMaker Pipelines is the recommended solution for",
+    "chunk_id": 37,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Correct option:\nUse SageMaker Pipelines with conditional steps to implement\nmanual approval workflows for model deployment\nAmazon SageMaker Pipelines is the recommended solution for\nimplementing manual approval-based workflows for model\ndeployment. SageMaker Pipelines allows you to design\nautomated ML workflows, including steps for training, registering\nmodels in SageMaker Model Registry, and deploying models to\nendpoints. You can use conditional steps in SageMaker Pipelines\nto introduce a manual approval step before proceeding to\nproduction deployments. This ensures only models explicitly\napproved by a human reviewer are deployed, which aligns\nperfectly with the requirement for governance and control.\nKey Benefits:",
+    "chunk_id": 38,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Supports manual approval workflows within automated pipelines.\nIntegrates seamlessly with SageMaker Model Registry to manage\napproved models.\nReduces operational overhead by automating model deployment\nwith built-in approval checks.\nIncorrect options:\nUse Amazon SageMaker Model Monitor to validate and approve\nmodels before deployment - SageMaker Model Monitor is\ndesigned to detect drift and monitor model quality after\ndeployment. It does not provide manual approval workflows or\nenforce governance before deployment.\nUse AWS CodePipeline to manage deployments and set manual\napproval actions for endpoint updates - While AWS CodePipeline\ncan include manual approval actions, it is primarily a CI/CD tool.\nIt does not integrate natively with SageMaker Model Registry or\nsupport the orchestration of ML workflows like SageMaker\nPipelines does. This makes it less suitable for the ML-specific\nuse case described.\nUse Amazon SageMaker Lineage Tracking to validate and",
+    "chunk_id": 39,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "support the orchestration of ML workflows like SageMaker\nPipelines does. This makes it less suitable for the ML-specific\nuse case described.\nUse Amazon SageMaker Lineage Tracking to validate and\napprove models before deployment - SageMaker Lineage\nTracking is used to track the lineage of artifacts (e.g., datasets,\nmodels, and experiments) within an ML workflow. It provides\nvisibility into the relationships between components, such as\nwhich dataset and training job produced a specific model\nversion. However, it does not support manual approval workflows\nor enforce governance for deploying models to production. While\nlineage tracking is valuable for auditing and reproducibility, it\ndoes not include built-in mechanisms for validating or approving\nmodels for deployment.\nReference:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/model-\nregistry-approve.html\nDomain\nML Solution Monitoring, Maintenance, and Security\nQuestion 28",
+    "chunk_id": 40,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Incorrect\nYou are working as a machine learning engineer for a startup that\nprovides image recognition services. The service is currently in its\nbeta phase, and the company expects varying levels of traffic,\nwith some days having very few requests and other days\nexperiencing sudden spikes. The company wants to minimize\ncosts during low-traffic periods while still being able to handle\nlarge, infrequent spikes of requests efficiently. Given these\nrequirements, you are considering using Amazon SageMaker for\nyour deployment.\nWhich of the following statements is the BEST recommendation\nfor the given scenario?\nUse Amazon SageMaker Real-time Inference that minimizes\ncosts during low-traffic periods while managing large infrequent\nspikes of requests efficiently\nUse Batch transform to run inference with Amazon SageMaker\nthat minimizes costs during low-traffic periods while managing\nlarge infrequent spikes of requests efficiently\nYour answer is incorrect",
+    "chunk_id": 41,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use Batch transform to run inference with Amazon SageMaker\nthat minimizes costs during low-traffic periods while managing\nlarge infrequent spikes of requests efficiently\nYour answer is incorrect\nUse Amazon SageMaker Asynchronous Inference that minimizes\ncosts during low-traffic periods while managing large infrequent\nspikes of requests efficiently\nCorrect answer\nUse Amazon SageMaker Serverless Inference that minimizes\ncosts during low-traffic periods while managing large infrequent\nspikes of requests efficiently\nOverall explanation\nCorrect option:\nUse Amazon SageMaker Serverless Inference that minimizes\ncosts during low-traffic periods while managing large infrequent\nspikes of requests efficiently",
+    "chunk_id": 42,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-\nworks-deployment.html\nServerless Inference is designed to automatically scale the\ncompute resources based on incoming requests, making it highly\nefficient for handling varying levels of traffic. It is cost-effective\nbecause you only pay for the compute time used when requests\nare being processed. This makes it an excellent choice for\nscenarios where traffic is unpredictable, with periods of low or no\ntraffic. It is ideal for workloads that have idle periods between\ntraffic spikes and can tolerate cold starts.",
+    "chunk_id": 43,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://docs.aws.amazon.com/sagemaker/latest/dg/\nserverless-endpoints.html\nIncorrect options:\nUse Amazon SageMaker Asynchronous Inference that minimizes\ncosts during low-traffic periods while managing large infrequent\nspikes of requests efficiently - Asynchronous Inference is ideal for\nhandling large and long-running inference requests that do not\nrequire an immediate response. However, it may not be as cost-\neffective for handling fluctuating traffic where immediate scaling\nand low-latency are priorities.\nUse Amazon SageMaker Real-time Inference that minimizes\ncosts during low-traffic periods while managing large infrequent\nspikes of requests efficiently - Real-time inference is ideal for\ninference workloads where you have real-time, interactive, low\nlatency requirements.\nUse Batch transform to run inference with Amazon SageMaker\nthat minimizes costs during low-traffic periods while managing\nlarge infrequent spikes of requests efficiently - To get predictions",
+    "chunk_id": 44,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use Batch transform to run inference with Amazon SageMaker\nthat minimizes costs during low-traffic periods while managing\nlarge infrequent spikes of requests efficiently - To get predictions\nfor an entire dataset, you can use Batch transform with Amazon\nSageMaker.\nReferences:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/serverless-\nendpoints.html",
+    "chunk_id": 45,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-\nworks-deployment.html\nDomain\nDeployment and Orchestration of ML Workflows\nQuestion 32\nIncorrect\nA healthcare company is building an AI application to predict\npatient readmission rates using Amazon SageMaker. The\napplication must support end-to-end machine learning\nworkflows, including data preprocessing, model training, version\nmanagement, and deployment. The training data, stored securely\nin Amazon S3, must be used in isolated and secure environments\nto comply with regulatory requirements. As part of model\nexperimentation, the data science team is running multiple\ntraining jobs back-to-back to test different hyperparameter\nconfigurations.\nTo improve the team’s productivity, the company needs to reduce\nthe startup time for each consecutive training job. What is the\nmost efficient solution to achieve this goal?\nYour answer is incorrect\nUse SageMaker Training Compiler to minimize data transfer\nlatency",
+    "chunk_id": 46,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "most efficient solution to achieve this goal?\nYour answer is incorrect\nUse SageMaker Training Compiler to minimize data transfer\nlatency\nUse Amazon EC2 On-Demand Instances with pre-configured\nAMIs for SageMaker\nCorrect answer\nEnable SageMaker Warm Pools to reuse training instances\nbetween jobs\nUse Amazon SageMaker Managed Spot Training for faster\nresource allocation\nOverall explanation\nCorrect option:",
+    "chunk_id": 47,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Enable SageMaker Warm Pools to reuse training instances\nbetween jobs\nAmazon SageMaker Warm Pools allow reuse of ML compute\ninfrastructure between consecutive training jobs. This\nsignificantly reduces startup times because instances remain\nwarm and do not require new provisioning or configuration.\nWarm Pools work seamlessly with SageMaker training jobs,\nhelping minimize infrastructure startup overhead while ensuring\nthe infrastructure is reused securely and efficiently. This is ideal\nfor use cases where consecutive training jobs are frequent, as in\nexperimentation workflows.\nKey Benefits:\nReduces time spent on infrastructure provisioning.\nOptimizes compute resource utilization for iterative training.\nSupports secure training job execution as it integrates with\nSageMaker's role-based permissions.\nvia - https://docs.aws.amazon.com/sagemaker/latest/dg/model-\nregistry.html\nIncorrect options:",
+    "chunk_id": 48,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use Amazon SageMaker Managed Spot Training for faster\nresource allocation - Managed Spot Training in Amazon\nSageMaker is a cost-saving feature that uses spare EC2 capacity\nto run training jobs at a reduced cost. However, spot instances\nare not guaranteed to always be available and may lead to longer\ninfrastructure startup times due to capacity provisioning delays. It\ndoes not minimize startup times and is not ideal for consecutive\ntraining jobs requiring quick infrastructure readiness.\nUse Amazon EC2 On-Demand Instances with pre-configured\nAMIs for SageMaker - While pre-configured AMIs can reduce\nconfiguration time, EC2 On-Demand Instances still require\nprovisioning at the start of each job. SageMaker Warm Pools are\nspecifically designed to minimize startup times for training jobs.\nUse SageMaker Training Compiler to minimize data transfer\nlatency - The SageMaker Training Compiler is used to optimize\ndeep learning training workloads by accelerating model training",
+    "chunk_id": 49,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use SageMaker Training Compiler to minimize data transfer\nlatency - The SageMaker Training Compiler is used to optimize\ndeep learning training workloads by accelerating model training\nand reducing costs. While it improves training performance, it\ndoes not address infrastructure startup times or reduce the time\nrequired to initialize the training environment.\nReferences:\nhttps://aws.amazon.com/blogs/machine-learning/best-practices-\nfor-amazon-sagemaker-training-managed-warm-pools/\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/train-warm-\npools.html\nDomain\nDeployment and Orchestration of ML Workflows\nQuestion 38\nIncorrect\nA company’s data science team uses Amazon SageMaker\nnotebook instances to develop machine learning models. The\nteam frequently collaborates on projects that require access to\nshared datasets and specific Amazon S3 buckets. Currently,\npermissions for accessing S3 buckets are managed by creating\nindividual IAM roles for each SageMaker notebook instance. This",
+    "chunk_id": 50,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "shared datasets and specific Amazon S3 buckets. Currently,\npermissions for accessing S3 buckets are managed by creating\nindividual IAM roles for each SageMaker notebook instance. This\ndecentralized approach has led to inconsistent permissions,",
+    "chunk_id": 51,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "duplication of effort, and difficulty in managing access across\nteam members. The company wants to centralize permissions\nmanagement to ensure all SageMaker notebook instances used\nby the team can access the required S3 buckets consistently and\nefficiently.\nWhich solution will meet this requirement?\nCorrect answer\nAttach a single IAM role with S3 permissions to all SageMaker\nnotebook instances used by the data science team\nYour answer is incorrect\nCreate an IAM group for the data science team, associate the\nrequired S3 access policies to the group, and attach the IAM\ngroup directly to the SageMaker notebook instances to grant\npermissions to all data scientists\nAttach the necessary permissions directly to each data scientist's\nIAM user to enable granular control over access to the notebook\ninstances\nUse inline policies directly on each notebook instance to define\nlocal permissions for the data scientists\nOverall explanation\nCorrect option:",
+    "chunk_id": 52,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "instances\nUse inline policies directly on each notebook instance to define\nlocal permissions for the data scientists\nOverall explanation\nCorrect option:\nAttach a single IAM role with S3 permissions to all SageMaker\nnotebook instances used by the data science team\nThe correct way to centralize access to Amazon S3 buckets for\nSageMaker notebook instances is to:\nCreate a single IAM role with the required S3 access\npermissions.\nAttach this role to all SageMaker notebook instances used by the\ndata science team.\nIAM roles are specifically designed to grant AWS service\nresources (like SageMaker notebook instances) secure,\ntemporary access to other AWS services. This ensures:",
+    "chunk_id": 53,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Consistent permissions across all team members.\nSimplified management of access policies without duplicating\nroles.\nScalability as new SageMaker notebook instances are created.\nIncorrect options:\nCreate an IAM group for the data science team, associate the\nrequired S3 access policies to the group, and attach the IAM\ngroup directly to the SageMaker notebook instances to grant\npermissions to all data scientists - IAM groups cannot be directly\nattached to Amazon SageMaker notebook instances or any AWS\nresources. IAM groups are used to organize IAM users and\nsimplify permission management by attaching policies to the\ngroup, which are then inherited by its members. To grant\npermissions to resources like SageMaker notebook instances,\nyou must use IAM roles or directly attach policies to individual\nIAM users. This option incorrectly implies that an IAM group can\nbe attached to a notebook instance, which is not supported in\nAWS.",
+    "chunk_id": 54,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "you must use IAM roles or directly attach policies to individual\nIAM users. This option incorrectly implies that an IAM group can\nbe attached to a notebook instance, which is not supported in\nAWS.\nAttach the necessary permissions directly to each data scientist's\nIAM user to enable granular control over access to the notebook\ninstances - Assigning policies directly to IAM users creates\ndecentralized management, which becomes difficult to maintain\nas the team grows.\nUse inline policies directly on each notebook instance to define\nlocal permissions for the data scientists - This option acts as a\ndistractor. An inline policy is a policy created for a single IAM\nidentity (a user, user group, or role). It cannot be directly attached\nto a resource, such as the SageMaker notebook instance.\nReference:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-\nroles.html\nDomain\nML Solution Monitoring, Maintenance, and Security\nQuestion 39\nIncorrect",
+    "chunk_id": 55,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "A financial services company uses Amazon SageMaker to\ndevelop and register machine learning (ML) models for various\nbusiness needs, such as fraud detection, risk assessment, and\ncustomer segmentation. These models are stored in model\ngroups within the SageMaker Model Registry. The data science\nteam is categorized into three specialized groups based on their\nareas of focus: fraud detection models, risk assessment models,\nand customer segmentation models. An ML engineer needs to\nimplement a solution to organize the existing models into these\nthree business categories to improve discoverability at scale,\nwhile ensuring the integrity of the model artifacts and their\nexisting groupings remains unaffected.\nWhich solution will meet these requirements?\nAttach custom tags to each model artifact in the SageMaker\nModel Registry to specify their category and filter models based\non tags\nYour answer is incorrect\nUse SageMaker Feature Store to tag models with metadata for",
+    "chunk_id": 56,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Model Registry to specify their category and filter models based\non tags\nYour answer is incorrect\nUse SageMaker Feature Store to tag models with metadata for\nfraud detection, risk assessment, and customer segmentation.\nFilter models using queries on the Feature Store.\nMove models into newly created SageMaker model groups for\nfraud detection, risk assessment, and customer segmentation,\nreassigning them from their current groups\nCorrect answer\nUse SageMaker Model Registry collections to group existing\nmodel groups into high-level categories, such as fraud detection,\nrisk assessment, and customer segmentation\nOverall explanation\nCorrect option:\nUse SageMaker Model Registry collections to group existing\nmodel groups into high-level categories, such as fraud detection,\nrisk assessment, and customer segmentation",
+    "chunk_id": 57,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "SageMaker Model Registry collections allow users to logically\norganize model groups into high-level categories without\ndisrupting the integrity of the underlying model groups or\nartifacts. Collections provide a scalable and efficient way to\nimprove model discoverability across a large registry as well as\nmaintain the existing structure of model groups and their\nmetadata. You can also scale seamlessly as more models and\nbusiness categories are added.\nKey Benefits of SageMaker Model Registry collections :\nNon-disruptive reorganization using collections.\nBetter model management and discoverability at scale.\nIncorrect options:\nAttach custom tags to each model artifact in the SageMaker\nModel Registry to specify their category and filter models based\non tags - Tags are useful for additional metadata but do not\nprovide a hierarchical organizational structure like model registry\ncollections.\nMove models into newly created SageMaker model groups for",
+    "chunk_id": 58,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "on tags - Tags are useful for additional metadata but do not\nprovide a hierarchical organizational structure like model registry\ncollections.\nMove models into newly created SageMaker model groups for\nfraud detection, risk assessment, and customer segmentation,\nreassigning them from their current groups - Moving models to\nnew groups disrupts the existing integrity of the model groups\nand their associated lineage, approvals, and metadata.\nUse SageMaker Feature Store to tag models with metadata for\nfraud detection, risk assessment, and customer segmentation.\nFilter models using queries on the Feature Store. - SageMaker\nFeature Store is intended for storing and serving ML model\nfeatures, not for managing model group organization or\ndiscoverability in the Model Registry.\nReference:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/\nmodelcollections.html\nDomain\nML Solution Monitoring, Maintenance, and Security\nQuestion 40\nIncorrect",
+    "chunk_id": 59,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "A logistics company is building a delivery time prediction model\non AWS to estimate the number of hours it will take for packages\nto reach their destination. The dataset includes information such\nas distance traveled, traffic conditions, and package weight. The\nmodel outputs a continuous numerical value representing the\nestimated delivery time in hours. The ML engineer needs to\nevaluate the model’s performance to determine how accurately it\npredicts delivery times.\nWhich metric should the ML engineer use to evaluate the model's\nperformance?\nPrecision\nYour answer is incorrect\nAccuracy\nCorrect answer\nMean Absolute Error (MAE)\nArea Under the ROC Curve (AUC-ROC)\nOverall explanation\nCorrect option:\nMean Absolute Error (MAE)\nMean Absolute Error (MAE) is a suitable metric for regression\nproblems where the goal is to predict continuous numerical\nvalues. MAE calculates the average absolute difference between\nthe predicted and actual values, providing an interpretable",
+    "chunk_id": 60,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "problems where the goal is to predict continuous numerical\nvalues. MAE calculates the average absolute difference between\nthe predicted and actual values, providing an interpretable\nmeasure of model error. Unlike MSE, MAE does not square the\nerrors, so it is less sensitive to outliers and provides a\nstraightforward interpretation in the same units as the target\nvariable.\nMetrics used to measure machine learning model performance:",
+    "chunk_id": 61,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://docs.aws.amazon.com/sagemaker/latest/dg/\nautopilot-metrics-validation.html\nIncorrect options:\nPrecision - Precision measures how well an algorithm predicts\nthe true positives (TP) out of all of the positives that it identifies. It\nis defined as follows: Precision = TP/(TP+FP), with values ranging\nfrom zero to one, and is used in binary classification.\nAccuracy - Accuracy is the ratio of the number of correctly\nclassified items to the total number of (correctly and incorrectly)\nclassified items. It is used for both binary and multiclass\nclassification.\nArea Under the ROC Curve (AUC-ROC) - AUC-ROC is used to\nevaluate the performance of binary classification models. It\nmeasures how well the model distinguishes between classes,\nwhich is irrelevant for regression.\nReference:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-\nmetrics-validation.html\nDomain\nML Model Development\nQuestion 41\nIncorrect\nYou are a machine learning engineer working for a",
+    "chunk_id": 62,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Reference:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-\nmetrics-validation.html\nDomain\nML Model Development\nQuestion 41\nIncorrect\nYou are a machine learning engineer working for a\ntelecommunications company that needs to develop a predictive\nmaintenance model. The goal is to predict when network\nequipment is likely to fail based on historical sensor data. The\ndata includes features such as temperature, pressure, usage, and\nerror rates recorded over time. The company wants to avoid\nunplanned downtime and optimize maintenance schedules by\npredicting failures just in time.\nGiven the nature of the data and the business objective, which\nAmazon SageMaker built-in algorithm is the MOST SUITABLE for\nthis use case?",
+    "chunk_id": 63,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Time Series K-Means Algorithm to cluster similar patterns in the\nsensor data and predict failures\nYour answer is incorrect\nDeepAR Algorithm to forecast future equipment failures based on\nhistorical data\nCorrect answer\nRandom Cut Forest (RCF) Algorithm to detect anomalies in\nsensor data that may indicate impending failures\nLinear Learner Algorithm to classify equipment status as 'healthy'\nor 'at risk' based on sensor readings\nOverall explanation\nCorrect option:\nRandom Cut Forest (RCF) Algorithm to detect anomalies in\nsensor data that may indicate impending failures\nAmazon SageMaker Random Cut Forest (RCF) is an\nunsupervised algorithm for detecting anomalous data points\nwithin a data set. These are observations which diverge from\notherwise well-structured or patterned data. Anomalies can\nmanifest as unexpected spikes in time series data, breaks in\nperiodicity, or unclassifiable data points. They are easy to\ndescribe in that, when viewed in a plot, they are often easily",
+    "chunk_id": 64,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "manifest as unexpected spikes in time series data, breaks in\nperiodicity, or unclassifiable data points. They are easy to\ndescribe in that, when viewed in a plot, they are often easily\ndistinguishable from the \"regular\" data. Including these\nanomalies in a data set can drastically increase the complexity of\na machine learning task since the \"regular\" data can often be\ndescribed with a simple model.\nRandom Cut Forest (RCF) is specifically designed for detecting\nanomalies in data. This algorithm excels at identifying\nunexpected patterns in sensor data that could indicate the early\nstages of equipment failure. It’s particularly well-suited for\nscenarios where you need to react to unusual behaviors in near-\nreal-time.\nMapping use cases to built-in algorithms:",
+    "chunk_id": 65,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://docs.aws.amazon.com/sagemaker/latest/dg/\nalgos.html\nIncorrect options:\nDeepAR Algorithm to forecast future equipment failures based on\nhistorical data - DeepAR is designed for forecasting future time\nseries data, which could be useful for predicting future\nequipment behavior. However, it is not primarily used for anomaly\ndetection, which is critical for identifying unusual patterns that\nprecede failures.\nLinear Learner Algorithm to classify equipment status as 'healthy'\nor 'at risk' based on sensor readings - Linear Learner could be\nused for classification tasks, but predicting maintenance needs\noften involves detecting subtle anomalies rather than simple\nclassification. Additionally, a binary classification model might not\ncapture the complex patterns associated with potential failures.\nTime Series K-Means Algorithm to cluster similar patterns in the\nsensor data and predict failures - Time Series K-Means can",
+    "chunk_id": 66,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "capture the complex patterns associated with potential failures.\nTime Series K-Means Algorithm to cluster similar patterns in the\nsensor data and predict failures - Time Series K-Means can\ncluster similar time series patterns, but clustering alone does not\nprovide the precision needed for real-time anomaly detection,\nwhich is crucial for predictive maintenance.\nReferences:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/algos.html",
+    "chunk_id": 67,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "https://docs.aws.amazon.com/sagemaker/latest/dg/\nrandomcutforest.html\nDomain\nML Model Development\nQuestion 42\nIncorrect\nYou are a data scientist at a credit risk management company\nbuilding a machine learning model to predict loan defaults. To\nensure transparency and regulatory compliance, you need to\nexplain how the model makes its predictions, particularly for\nhigh-stakes decisions such as loan approvals or rejections. The\ncompany wants a detailed understanding of the influence of\nindividual features on the model’s predictions for specific\ncustomers, as well as an overall view of how features impact the\nmodel's predictions across the entire dataset.\nWhich of the following explanations BEST describes the\ndifferences between Shapley values and Partial Dependence\nPlots (PDP) in the context of model explainability, and how you\nmight use them for this purpose?\nYour answer is incorrect\nShapley values provide a global view of the model’s behavior by",
+    "chunk_id": 68,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Plots (PDP) in the context of model explainability, and how you\nmight use them for this purpose?\nYour answer is incorrect\nShapley values provide a global view of the model’s behavior by\nmeasuring the average effect of each feature across all instances,\nwhile PDP offers a local view by showing the effect of a single\nfeature on the model’s prediction for a specific instance. Use\nShapley values to understand overall feature importance and\nPDP to interpret individual predictions\nCorrect answer\nShapley values provide a local explanation by quantifying the\ncontribution of each feature to the prediction for a specific\ninstance, while PDP provides a global explanation by showing\nthe marginal effect of a feature on the model’s predictions across\nthe dataset. Use Shapley values to explain individual predictions\nand PDP to understand the model's behavior at a dataset level",
+    "chunk_id": 69,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Shapley values and PDP are both global explainability methods\nthat show the average effect of features on model predictions.\nUse either method to understand overall feature importance, but\nShapley values are computationally less expensive than PDP\nShapley values provide a visual interpretation of feature\nimportance using plots, while PDP provides numeric values\nindicating the marginal contribution of features to the model's\npredictions. Use Shapley values for visual analysis and PDP for\nquantitative analysis\nOverall explanation\nCorrect option:\nShapley values provide a local explanation by quantifying the\ncontribution of each feature to the prediction for a specific\ninstance, while PDP provides a global explanation by showing\nthe marginal effect of a feature on the model’s predictions across\nthe dataset. Use Shapley values to explain individual predictions\nand PDP to understand the model's behavior at a dataset level\nThis option correctly captures the differences between Shapley",
+    "chunk_id": 70,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "the dataset. Use Shapley values to explain individual predictions\nand PDP to understand the model's behavior at a dataset level\nThis option correctly captures the differences between Shapley\nvalues and PDP in the context of model explainability:\nShapley values are a local interpretability method that explains\nindividual predictions by assigning each feature a contribution\nscore based on its marginal effect on the prediction. This method\nis useful for understanding the impact of each feature on a\nspecific instance's prediction.\nPartial Dependence Plots (PDP), on the other hand, provide a\nglobal view of the model’s behavior by illustrating how the\npredicted outcome changes as a single feature is varied across\nits range, holding all other features constant. PDPs help\nunderstand the overall relationship between a feature and the\nmodel output across the entire dataset.\nThus, Shapley values are suited for explaining individual\ndecisions, while PDP is used to understand broader trends in",
+    "chunk_id": 71,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "model output across the entire dataset.\nThus, Shapley values are suited for explaining individual\ndecisions, while PDP is used to understand broader trends in\nmodel behavior.",
+    "chunk_id": 72,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-\nmodel-explainability.html\nIncorrect options:\nShapley values provide a global view of the model’s behavior by\nmeasuring the average effect of each feature across all instances,\nwhile PDP offers a local view by showing the effect of a single\nfeature on the model’s prediction for a specific instance. Use\nShapley values to understand overall feature importance and\nPDP to interpret individual predictions - This option is incorrect\nbecause it reverses the concepts of local and global\nexplainability methods. PDP is a global method, while Shapley\nvalues provide local explanations.\nShapley values and PDP are both global explainability methods\nthat show the average effect of features on model predictions.\nUse either method to understand overall feature importance, but\nShapley values are computationally less expensive than PDP -\nBoth methods are not purely global explainability tools. Shapley",
+    "chunk_id": 73,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "values are computationally more intensive than PDP due to the\nrequirement to compute contributions for each feature across\nmultiple permutations\nShapley values provide a visual interpretation of feature\nimportance using plots, while PDP provides numeric values\nindicating the marginal contribution of features to the model's\npredictions. Use Shapley values for visual analysis and PDP for\nquantitative analysis - This option is incorrect because Shapley\nvalues are not just visual; they provide quantitative contributions\nof features to predictions, while PDP provides visual insight into\nthe marginal effects, not numeric values alone.\nReference:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/clarify-\nmodel-explainability.html\nDomain\nML Model Development\nQuestion 43\nIncorrect\nA data scientist is working for a real estate analytics company to\nbuild an ML model that predicts the rental prices of commercial\noffice spaces. The dataset has several features but the data",
+    "chunk_id": 74,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "A data scientist is working for a real estate analytics company to\nbuild an ML model that predicts the rental prices of commercial\noffice spaces. The dataset has several features but the data\nscientist is particularly interested in the following features -\nBuilding Type and Year Constructed (building_type_year), City\nName (city) and Building Size in square meters (building_size).\nThe data has inconsistencies and requires preprocessing before\nmodel training. The data scientist plans to use the following\nfeature engineering techniques to transform the data:\nFeature splitting\nBinning\nOne-hot encoding\nStandardization\nHow would you match the given features with the most relevant\nfeature engineering technique?\nYour answer is incorrect",
+    "chunk_id": 75,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "building_type_year - feature splitting, city - One-hot encoding,\nbuilding_size - binning\nCorrect answer\nbuilding_type_year - feature splitting, city - One-hot encoding,\nbuilding_size - standardization\nbuilding_type_year - feature splitting, city - binning, building_size\n- standardization\nbuilding_type_year - standardization, city - binning, building_size\n- One-hot encoding\nOverall explanation\nCorrect option:\nbuilding_type_year - feature splitting, city - One-hot encoding,\nbuilding_size - standardization\nFeature splitting breaks a compound feature (e.g., \"Office_2010\")\ninto separate features such as \"Type\" and \"Year.\" This technique\nimproves model interpretability and performance by treating each\nsub-feature independently. So, this is the correct technique for\nthe feature building_type_year.\nOne-hot encoding converts categorical data (e.g., 'city') into\nbinary numerical columns. It allows ML models to process\ncategorical variables effectively. So, this is the correct technique",
+    "chunk_id": 76,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "One-hot encoding converts categorical data (e.g., 'city') into\nbinary numerical columns. It allows ML models to process\ncategorical variables effectively. So, this is the correct technique\nfor the feature city.",
+    "chunk_id": 77,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://docs.aws.amazon.com/databrew/latest/dg/recipe-\nactions.ONE_HOT_ENCODING.html\nStandardizing numerical features scales them to have a mean of\n0 and a standard deviation of 1. This technique ensures that\nnumerical features with different units or scales contribute\nequally to the model. So, this is the correct technique for the\nfeature building_size.\nIncorrect options:\nbuilding_type_year - feature splitting, city - One-hot encoding,\nbuilding_size - binning - Binning involves grouping continuous\nnumerical values into bins or ranges. While it is useful for\nsegmenting data, it does not apply to the building_size feature\nfor the given use case.\nbuilding_type_year - feature splitting, city - binning, building_size\n- standardization - Binning involves grouping continuous\nnumerical values into bins or ranges. While it is useful for\nsegmenting data, it does not apply to the city feature for the\ngiven use case.\nbuilding_type_year - standardization, city - binning, building_size",
+    "chunk_id": 78,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "segmenting data, it does not apply to the city feature for the\ngiven use case.\nbuilding_type_year - standardization, city - binning, building_size\n- One-hot encoding - Binning involves grouping continuous",
+    "chunk_id": 79,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "numerical values into bins or ranges. While it is useful for\nsegmenting data, it does not apply to the city feature for the\ngiven use case.\nReferences:\nhttps://docs.aws.amazon.com/wellarchitected/latest/machine-\nlearning-lens/data-preprocessing.html\nhttps://docs.aws.amazon.com/databrew/latest/dg/recipe-\nactions.ONE_HOT_ENCODING.html\nDomain\nData Preparation for Machine Learning (ML)\nQuestion 49\nIncorrect\nA media streaming company processes video metadata using\nAWS Glue jobs orchestrated by an AWS Glue workflow. These\njobs can run on a schedule or be triggered manually. The\ncompany is building Amazon SageMaker Pipelines to develop\nML models for predicting user engagement with video content.\nThe pipelines require the processed metadata from the AWS\nGlue jobs during the feature engineering phase of the ML\nworkflow. The company needs a solution to integrate the AWS\nGlue jobs with SageMaker Pipelines to ensure seamless data\nflow.\nWhich solution will meet these requirements with the LEAST",
+    "chunk_id": 80,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "workflow. The company needs a solution to integrate the AWS\nGlue jobs with SageMaker Pipelines to ensure seamless data\nflow.\nWhich solution will meet these requirements with the LEAST\noperational overhead?\nYour answer is incorrect\nConfigure an Amazon EventBridge rule to trigger the SageMaker\npipeline after the completion of AWS Glue jobs and pass job\nmetadata via Lambda\nIntegrate the AWS Glue jobs as processing steps in the\nSageMaker Pipelines workflow to handle data preprocessing",
+    "chunk_id": 81,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Set up a custom Python script to orchestrate both the AWS Glue\nworkflow and SageMaker Pipelines, ensuring data dependencies\nare met\nCorrect answer\nUse SageMaker Pipelines callback steps to wait for the AWS\nGlue jobs to complete and retrieve the outputs directly from\nAmazon S3\nOverall explanation\nCorrect option:\nUse SageMaker Pipelines callback steps to wait for the AWS\nGlue jobs to complete and retrieve the outputs directly from\nAmazon S3\nSageMaker Pipelines callback steps are specifically designed to\nintegrate external processes into the SageMaker pipeline\nworkflow. By using a callback step, the SageMaker pipeline waits\nuntil the AWS Glue jobs complete. The output of the AWS Glue\njobs, stored in Amazon S3, is then passed to subsequent steps\nin the pipeline. This approach eliminates the need for custom\norchestration scripts, manual intervention, or redundant\nscheduling, ensuring minimal operational overhead. Callback\nsteps are an efficient way to synchronize external workflows, like",
+    "chunk_id": 82,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "orchestration scripts, manual intervention, or redundant\nscheduling, ensuring minimal operational overhead. Callback\nsteps are an efficient way to synchronize external workflows, like\nAWS Glue, with SageMaker Pipelines.\nIncorrect options:\nIntegrate the AWS Glue jobs as processing steps in the\nSageMaker Pipelines workflow to handle data preprocessing -\nAWS Glue jobs cannot be directly integrated as processing steps\nin SageMaker Pipelines because Glue is an independent service,\nnot a SageMaker-native processing task.\nConfigure an Amazon EventBridge rule to trigger the SageMaker\npipeline after the completion of AWS Glue jobs and pass job\nmetadata via Lambda - While this approach is technically\npossible, it introduces additional operational complexity by\nrequiring EventBridge rules and Lambda for orchestration.\nCallback steps in SageMaker Pipelines are a more direct\nsolution.",
+    "chunk_id": 83,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Set up a custom Python script to orchestrate both the AWS Glue\nworkflow and SageMaker Pipelines, ensuring data dependencies\nare met - Custom orchestration scripts require additional\ndevelopment and maintenance, increasing operational overhead\ncompared to the built-in callback steps feature in SageMaker\nPipelines.\nReference:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/build-and-\nmanage-steps-types.html\nDomain\nDeployment and Orchestration of ML Workflows\nQuestion 52\nIncorrect\nA global e-commerce company has developed a custom\nsentiment analysis model using Amazon Comprehend in Account\nA within the us-west-2 Region. The company now needs to copy\nthe model to Account B, which handles customer service\noperations, so that the model can be used to analyze customer\nfeedback. The solution must ensure secure and efficient transfer\nof the model with minimal development effort.\nWhich solution will meet these requirements?\nCorrect answer\nUse the Amazon Comprehend ImportModel API operation in",
+    "chunk_id": 84,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "of the model with minimal development effort.\nWhich solution will meet these requirements?\nCorrect answer\nUse the Amazon Comprehend ImportModel API operation in\nAccount B to securely import the sentiment analysis model from\nAccount A by configuring a resource based IAM policy in account\nA\nLeverage AWS Glue Data Catalog to register the model metadata\nin Account A and enable cross-account sharing with Account B.\nUse the Comprehend console in Account B to access the model\nYour answer is incorrect\nUse the Amazon Comprehend ImportModel API operation in\nAccount B to securely import the sentiment analysis model from",
+    "chunk_id": 85,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Account A by configuring a resource based IAM policy in account\nB\nManually download the model artifacts from Amazon S3 in\nAccount A and upload them to an S3 bucket in Account B. Use a\ncustom script to recreate the model in Account B\nOverall explanation\nCorrect option:\nUse the Amazon Comprehend ImportModel API operation in\nAccount B to securely import the sentiment analysis model from\nAccount A by configuring a resource based IAM policy in account\nA\nThe Amazon Comprehend ImportModel API operation is\ndesigned for transferring custom models between accounts. The\nsource model must be in the same AWS Region that you're using\nwhen you import. You can't import a model that's in a different\nRegion.\nAmazon Comprehend users can copy trained custom models\nbetween AWS accounts in a two-step process. First, a user in\none AWS account (account A), shares a custom model that's in\ntheir account. Then, a user in another AWS account (account B)",
+    "chunk_id": 86,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "between AWS accounts in a two-step process. First, a user in\none AWS account (account A), shares a custom model that's in\ntheir account. Then, a user in another AWS account (account B)\nimports the model into their account. The account B user does\nnot need to train the model, and does not need to copy (or\naccess) the original training data or test data.\nTo share a custom model in account A, you need to attach a\nresource based IAM policy in account A. This policy authorizes\nan entity in account B, such as a user or role, to import the model\nversion into Amazon Comprehend in their AWS account. The\naccount B user must import the model into the same AWS\nRegion as the original model.",
+    "chunk_id": 87,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://docs.aws.amazon.com/comprehend/latest/dg/\ncustom-copy-sharing.html#custom-copy-sharing-example-policy\nIncorrect options:\nManually download the model artifacts from Amazon S3 in\nAccount A and upload them to an S3 bucket in Account B. Use a\ncustom script to recreate the model in Account B - Amazon\nComprehend custom models are managed services, and their\nartifacts are not directly accessible as files. You cannot export\nthem to S3 for manual transfer. Instead, you must use the\nAmazon Comprehend APIs for sharing or copying models\nbetween accounts.\nLeverage AWS Glue Data Catalog to register the model metadata\nin Account A and enable cross-account sharing with Account B.",
+    "chunk_id": 88,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use the Comprehend console in Account B to access the model\n- AWS Glue Data Catalog is used for metadata management in\ndata lakes and ETL workflows, not for transferring Comprehend\ncustom models.\nUse the Amazon Comprehend ImportModel API operation in\nAccount B to securely import the sentiment analysis model from\nAccount A by configuring a resource based IAM policy in account\nB - You need to attach a resource based IAM policy in account A\nand NOT in account B.\nReferences:\nhttps://docs.aws.amazon.com/comprehend/latest/APIReference/\nAPI_ImportModel.html\nhttps://docs.aws.amazon.com/comprehend/latest/dg/custom-\ncopy-sharing.html#custom-copy-sharing-example-policy\nhttps://docs.aws.amazon.com/comprehend/latest/dg/custom-\ncopy.html\nDomain\nML Model Development\nQuestion 53\nIncorrect\nYou are a data scientist at a pharmaceutical company that builds\npredictive models to analyze clinical trial data. Due to regulatory\nrequirements, the company must maintain strict version control",
+    "chunk_id": 89,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "You are a data scientist at a pharmaceutical company that builds\npredictive models to analyze clinical trial data. Due to regulatory\nrequirements, the company must maintain strict version control\nof all models used in decision-making processes. This includes\ntracking which data, hyperparameters, and code were used to\ntrain each model, as well as ensuring that models can be easily\nreproduced and audited in the future. You decide to implement a\nsystem to manage model versions and track their lifecycle\neffectively.\nWhich of the following strategies is the MOST LIKELY to ensure\nmodel versioning, repeatability, and auditability?\nUse Amazon S3 to store each version of the model manually,\ntagging the stored files with metadata about the training data,\nhyperparameters, and code used for training",
+    "chunk_id": 90,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Your answer is incorrect\nUse SageMaker Model Monitor to track the performance of\nmodels in production, ensuring that any changes in model\nbehavior are documented for future audits\nCorrect answer\nLeverage the SageMaker Model Registry to register, track, and\nmanage different versions of models, capturing all relevant\nmetadata, including data sources, hyperparameters, and training\ncode\nCreate a version control system in Git for the model’s training\ncode and configuration files, while storing the trained models in a\nseparate S3 bucket for easy retrieval\nOverall explanation\nCorrect option:\nLeverage the SageMaker Model Registry to register, track, and\nmanage different versions of models, capturing all relevant\nmetadata, including data sources, hyperparameters, and training\ncode\nThe SageMaker Model Registry is specifically designed for\nmanaging model versions in a systematic and organized manner.\nIt allows you to register different versions of a model, track",
+    "chunk_id": 91,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "code\nThe SageMaker Model Registry is specifically designed for\nmanaging model versions in a systematic and organized manner.\nIt allows you to register different versions of a model, track\nmetadata such as data sources, hyperparameters, and training\ncode, and ensure that each version is easily reproducible. This\napproach is ideal for regulatory environments where audit trails\nand model governance are critical.\nWith the Amazon SageMaker Model Registry you can do the\nfollowing:\nCatalog models for production.\nManage model versions.\nAssociate metadata, such as training metrics, with a model.\nView information from Amazon SageMaker Model Cards in your\nregistered models.\nManage the approval status of a model.",
+    "chunk_id": 92,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Deploy models to production.\nAutomate model deployment with CI/CD.\nShare models with other users.\nIncorrect options:\nUse Amazon S3 to store each version of the model manually,\ntagging the stored files with metadata about the training data,\nhyperparameters, and code used for training - While using\nAmazon S3 to store model versions with metadata is possible, it\nrequires a lot of manual effort and lacks the automated tracking\nand management capabilities needed for comprehensive version\ncontrol, repeatability, and auditability.\nCreate a version control system in Git for the model’s training\ncode and configuration files, while storing the trained models in a\nseparate S3 bucket for easy retrieval - Using Git for version\ncontrol of the training code and configurations is a good practice,\nbut it does not address the need to manage the actual trained\nmodels and their associated metadata systematically. The\nSageMaker Model Registry offers a more comprehensive solution",
+    "chunk_id": 93,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "but it does not address the need to manage the actual trained\nmodels and their associated metadata systematically. The\nSageMaker Model Registry offers a more comprehensive solution\nthat integrates both code and model versioning.\nUse SageMaker Model Monitor to track the performance of\nmodels in production, ensuring that any changes in model\nbehavior are documented for future audits - SageMaker Model\nMonitor is useful for monitoring model performance in\nproduction, but it does not handle version control or track the\nmetadata necessary for repeatability and audits. It is\ncomplementary to, but not a substitute for, the SageMaker Model\nRegistry.\nReferences:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/model-\nregistry.html\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/model-\nmonitor.html\nDomain\nML Model Development\nQuestion 54",
+    "chunk_id": 94,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Incorrect\nYou are an ML Engineer working for a logistics company that\nuses multiple machine learning models to optimize delivery\nroutes in real-time. Each model needs to process data quickly to\nprovide up-to-the-minute route adjustments, but the company\nalso has strict cost constraints. You need to deploy the models in\nan environment where performance, cost, and latency are\ncarefully balanced. There may be slight variations in the access\nfrequency of the models. Any excessive costs could impact the\nproject’s profitability.\nWhich of the following strategies should you consider to balance\nthe tradeoffs between performance, cost, and latency when\ndeploying your model in Amazon SageMaker? (Select two)\nChoose a lower-cost CPU instance, accepting longer inference\ntimes, as the savings on compute costs are more important than\nminimizing latency\nYour selection is correct\nUse Amazon SageMaker’s multi-model endpoint to deploy\nmultiple models on a single instance, reducing costs by sharing",
+    "chunk_id": 95,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "minimizing latency\nYour selection is correct\nUse Amazon SageMaker’s multi-model endpoint to deploy\nmultiple models on a single instance, reducing costs by sharing\nresources\nDeploy the model on a high-performance GPU instance to\nminimize latency, regardless of the higher cost, ensuring real-time\nroute adjustments\nYour selection is incorrect\nLeverage Amazon SageMaker Neo to compile the model for\noptimized deployment on edge devices, reducing latency and\ncost but with limited scalability for large datasets\nCorrect selection\nImplement auto-scaling on a fleet of medium-sized instances,\nallowing the system to adjust resources based on real-time\ndemand, balancing cost and performance dynamically",
+    "chunk_id": 96,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Overall explanation\nCorrect options:\nUse Amazon SageMaker’s multi-model endpoint to deploy\nmultiple models on a single instance, reducing costs by sharing\nresources\nAmazon SageMaker’s multi-model endpoint allows you to deploy\nmultiple models on a single instance. This can significantly\nreduce costs by sharing resources among models, but it may\nintroduce slight increases in latency due to the need to load the\ncorrect model into memory. This tradeoff can be acceptable if\ncost savings are a priority and latency requirements are not ultra-\nstrict.\nvia - https://docs.aws.amazon.com/sagemaker/latest/dg/multi-\nmodel-endpoints.html\nImplement auto-scaling on a fleet of medium-sized instances,\nallowing the system to adjust resources based on real-time\ndemand, balancing cost and performance dynamically",
+    "chunk_id": 97,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Auto-scaling allows you to dynamically adjust the number of\ninstances based on demand, which helps balance performance\nand cost. During peak times, more instances can be provisioned\nto maintain low latency, while during off-peak times, fewer\ninstances are used, reducing costs. This strategy offers a flexible\nway to manage the tradeoffs between performance, cost, and\nlatency.\nIncorrect options:\nDeploy the model on a high-performance GPU instance to\nminimize latency, regardless of the higher cost, ensuring real-time\nroute adjustments - While deploying on a high-performance GPU\ninstance would minimize latency, it may not be cost-effective,\nespecially if the model does not require the full computational\npower of a GPU. The high cost might outweigh the benefits of\nlower latency.\nChoose a lower-cost CPU instance, accepting longer inference\ntimes, as the savings on compute costs are more important than\nminimizing latency - Choosing a lower-cost CPU instance could",
+    "chunk_id": 98,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Choose a lower-cost CPU instance, accepting longer inference\ntimes, as the savings on compute costs are more important than\nminimizing latency - Choosing a lower-cost CPU instance could\nlead to unacceptable delays in route adjustments, which could\nimpact delivery times. In this scenario, optimizing latency is\ncritical, and sacrificing performance for cost could be detrimental\nto the business.\nLeverage Amazon SageMaker Neo to compile the model for\noptimized deployment on edge devices, reducing latency and\ncost but with limited scalability for large datasets - While Amazon\nSageMaker Neo can optimize models for deployment on edge\ndevices, it is not the best fit for this scenario. Neo is more\nsuitable for low-latency, cost-effective deployments on devices\nwith limited resources. In this scenario, the need for scalable,\ncloud-based infrastructure is more important.\nReferences:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/multi-model-\nendpoints.html",
+    "chunk_id": 99,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "with limited resources. In this scenario, the need for scalable,\ncloud-based infrastructure is more important.\nReferences:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/multi-model-\nendpoints.html\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-\nauto-scaling.html\nDomain",
+    "chunk_id": 100,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Deployment and Orchestration of ML Workflows\nQuestion 57\nIncorrect\nA research organization collects weather data from multiple\nsensor devices across various locations. The data is stored as\nCSV files in a central Amazon S3 bucket. The CSV files contain\nthe same schema, with an observation date column to record\nwhen each reading was taken. The organization needs to perform\nad-hoc queries on the data to filter and analyze based on the\nobservation date.\nThe solution must enable efficient querying. Which solution will\nmeet this requirement with the LEAST operational overhead?\nUse Amazon EMR with Apache Hive to preprocess the CSV files\nand filter the data using HiveQL\nYour answer is incorrect\nStream the new CSV files into Amazon Redshift and query the\ndata using SQL filters on the observation date column\nUse AWS Glue to create an ETL job that partitions and\ntransforms the CSV files for querying by the observation date and\nprocesses the output into a new S3 bucket\nCorrect answer",
+    "chunk_id": 101,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use AWS Glue to create an ETL job that partitions and\ntransforms the CSV files for querying by the observation date and\nprocesses the output into a new S3 bucket\nCorrect answer\nUse Amazon Athena and run a CTAS (CREATE TABLE AS\nSELECT) query with partitioning enabled on the observation date\ncolumn to query and optimize the CSV files based on the\nobservation date column\nOverall explanation\nCorrect option:\nUse Amazon Athena and run a CTAS (CREATE TABLE AS\nSELECT) query with partitioning enabled on the observation date\ncolumn to query and optimize the CSV files based on the\nobservation date column",
+    "chunk_id": 102,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Amazon Athena is a serverless query service that allows you to\nrun SQL queries directly on data stored in Amazon S3. Using the\nCTAS (CREATE TABLE AS SELECT) query:\nYou can filter the data efficiently based on the observation date\ncolumn since the data is partitioned.\nAthena can write the filtered results back to S3 in optimized\nformats like Parquet or ORC, which significantly improves query\nperformance and reduces costs.\nAthena requires no infrastructure management, making it the\nmost efficient and low-operational solution for querying S3-\nbased CSV data.\nIncorrect options:\nUse AWS Glue to create an ETL job that partitions and\ntransforms the CSV files for querying by the observation date and\nprocesses the output into a new S3 bucket - AWS Glue is\nsuitable for ETL tasks but requires more configuration and\noperational effort compared to Athena for simple ad-hoc\nquerying. In addition, using a new S3 bucket for writing the\noutput is inefficient.",
+    "chunk_id": 103,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "suitable for ETL tasks but requires more configuration and\noperational effort compared to Athena for simple ad-hoc\nquerying. In addition, using a new S3 bucket for writing the\noutput is inefficient.\nUse Amazon EMR with Apache Hive to preprocess the CSV files\nand filter the data using HiveQL - EMR with Hive is capable of\nhandling this task, but it introduces cluster management\noverhead and is not as cost-effective as Athena for serverless\nqueries.\nStream the new CSV files into Amazon Redshift and query the\ndata using SQL filters on the observation date column - Amazon\nRedshift is a managed data warehouse that requires data\ningestion, schema design, and ongoing management, adding\ncomplexity for simple querying tasks.\nReferences:\nhttps://docs.aws.amazon.com/athena/latest/ug/ctas.html\nhttps://docs.aws.amazon.com/athena/latest/ug/ctas-\nexamples.html\nDomain\nData Preparation for Machine Learning (ML)",
+    "chunk_id": 104,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Question 58\nIncorrect\nYou are an ML engineer at an e-commerce company tasked with\nbuilding an automated recommendation system that scales\nduring peak shopping seasons. The solution requires\nprovisioning multiple compute resources, including SageMaker\nfor model training, EC2 instances for data preprocessing, and an\nRDS database for storing user interaction data. You need to\nautomate the deployment and management of these resources,\nensuring that the stacks can communicate effectively. The\ncompany prioritizes infrastructure as code (IaC) to maintain\nconsistency and scalability across environments.\nWhich approach is the MOST SUITABLE for automating the\nprovisioning of compute resources and ensuring seamless\ncommunication between stacks?\nYour answer is incorrect\nUse AWS Elastic Beanstalk to deploy the entire ML solution,\nrelying on its built-in environment management to handle the\nprovisioning and communication between resources\nautomatically",
+    "chunk_id": 105,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use AWS Elastic Beanstalk to deploy the entire ML solution,\nrelying on its built-in environment management to handle the\nprovisioning and communication between resources\nautomatically\nManually provision the SageMaker, EC2, and RDS resources\nusing the AWS Management Console, ensuring that\ncommunication is established by manually updating security\ngroups and networking configurations\nUse AWS CDK (Cloud Development Kit) to define the\ninfrastructure in a high-level programming language, deploying\neach service as an independent stack without configuring inter-\nstack communication\nCorrect answer\nUse AWS CloudFormation with nested stacks to automate the\nprovisioning of SageMaker, EC2, and RDS resources, and",
+    "chunk_id": 106,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "configure outputs from one stack as inputs to another to enable\ncommunication between them\nOverall explanation\nCorrect option:\nUse AWS CloudFormation with nested stacks to automate the\nprovisioning of SageMaker, EC2, and RDS resources, and\nconfigure outputs from one stack as inputs to another to enable\ncommunication between them\nAWS CloudFormation with nested stacks allows you to\nmodularize your infrastructure, making it easier to manage and\nreuse components. By passing outputs from one stack as inputs\nto another, you can automate the provisioning of resources while\nensuring that all stacks can communicate effectively. This\napproach also enables consistent and scalable deployments\nacross environments.\nvia - https://docs.aws.amazon.com/AWSCloudFormation/latest/\nUserGuide/using-cfn-nested-stacks.html\nIncorrect options:\nUse AWS CDK (Cloud Development Kit) to define the\ninfrastructure in a high-level programming language, deploying",
+    "chunk_id": 107,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "UserGuide/using-cfn-nested-stacks.html\nIncorrect options:\nUse AWS CDK (Cloud Development Kit) to define the\ninfrastructure in a high-level programming language, deploying\neach service as an independent stack without configuring inter-",
+    "chunk_id": 108,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "stack communication - AWS CDK allows you to define\ninfrastructure using high-level programming languages, which is\nflexible and powerful. However, failing to configure inter-stack\ncommunication would lead to a disjointed deployment, where\nservices may not function together as required.\nManually provision the SageMaker, EC2, and RDS resources\nusing the AWS Management Console, ensuring that\ncommunication is established by manually updating security\ngroups and networking configurations - Manually provisioning\nresources through the AWS Management Console is error-prone\nand not scalable. It lacks the automation and repeatability that\ninfrastructure as code provides, making it unsuitable for\nmanaging complex ML solutions that require seamless\ncommunication between multiple resources.\nUse AWS Elastic Beanstalk to deploy the entire ML solution,\nrelying on its built-in environment management to handle the\nprovisioning and communication between resources",
+    "chunk_id": 109,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use AWS Elastic Beanstalk to deploy the entire ML solution,\nrelying on its built-in environment management to handle the\nprovisioning and communication between resources\nautomatically - AWS Elastic Beanstalk is a managed service for\ndeploying applications, but it is not designed for orchestrating\ncomplex ML workflows with multiple resource types like\nSageMaker, EC2, and RDS. It also lacks fine-grained control over\nresource provisioning and inter-stack communication.\nReference:\nhttps://docs.aws.amazon.com/AWSCloudFormation/latest/\nUserGuide/using-cfn-nested-stacks.html\nDomain\nDeployment and Orchestration of ML Workflows\nQuestion 59\nIncorrect\nYou are a Machine Learning Engineer working for a large retail\ncompany that has developed multiple machine learning models\nto improve various aspects of their business, including\npersonalized recommendations, generative AI, and fraud\ndetection. The models have different deployment requirements:",
+    "chunk_id": 110,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "1. The recommendations models need to handle real-time\ninference with low latency.\n2. The generative AI model requires high scalability to manage\nfluctuating loads.\n3. The fraud detection model is a large model and needs to be\nintegrated into serverless applications to minimize\ninfrastructure management.\nWhich of the following deployment targets should you choose for\nthe different machine learning models, given their specific\nrequirements? (Select two)\nCorrect selection\nDeploy the real-time recommendation model using Amazon\nSageMaker endpoints to ensure low-latency, high-availability,\nand managed infrastructure for real-time inference\nDeploy all models using Amazon SageMaker endpoints for\nconsistency and ease of management, regardless of their\nindividual requirements for scalability, latency, or integration\nYour selection is incorrect\nChoose Amazon Elastic Container Service (Amazon ECS) for the\nrecommendation model, as it provides container orchestration for",
+    "chunk_id": 111,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Your selection is incorrect\nChoose Amazon Elastic Container Service (Amazon ECS) for the\nrecommendation model, as it provides container orchestration for\nlarge-scale, batch processing workloads with tight integration\ninto other AWS services\nYour selection is incorrect\nUse AWS Lambda to deploy the fraud detection model, which\nrequires rapid scaling and integration into an existing serverless\narchitecture, minimizing infrastructure management\nCorrect selection\nDeploy the generative AI model using Amazon Elastic Kubernetes\nService (Amazon EKS) to leverage containerized microservices\nfor high scalability and control over the deployment environment\nOverall explanation",
+    "chunk_id": 112,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Correct options:\nDeploy the real-time recommendation model using Amazon\nSageMaker endpoints to ensure low-latency, high-availability,\nand managed infrastructure for real-time inference\nReal-time inference is ideal for inference workloads where you\nhave real-time, interactive, low latency requirements. You can\ndeploy your model to SageMaker hosting services and get an\nendpoint that can be used for inference. These endpoints are\nfully managed and support autoscaling.\nThis makes it an ideal choice for the recommendation model,\nwhich must provide fast responses to user interactions with\nminimal downtime.\nDeploy the generative AI model using Amazon Elastic Kubernetes\nService (Amazon EKS) to leverage containerized microservices\nfor high scalability and control over the deployment environment\nAmazon EKS is designed for containerized applications that need\nhigh scalability and flexibility. It is suitable for the generative AI\nmodel, which may require complex orchestration and scaling in",
+    "chunk_id": 113,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Amazon EKS is designed for containerized applications that need\nhigh scalability and flexibility. It is suitable for the generative AI\nmodel, which may require complex orchestration and scaling in\nresponse to varying demand, while giving you full control over\nthe deployment environment.",
+    "chunk_id": 114,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://aws.amazon.com/blogs/containers/deploy-\ngenerative-ai-models-on-amazon-eks/\nIncorrect options:\nUse AWS Lambda to deploy the fraud detection model, which\nrequires rapid scaling and integration into an existing serverless\narchitecture, minimizing infrastructure management - While AWS\nLambda is excellent for serverless applications, it may not be the\nbest choice for a fraud detection model if it requires continuous,\nlow-latency processing or needs to handle very high throughput.\nLambda is better suited for lightweight, event-driven tasks rather\nthan long-running, complex inference jobs.",
+    "chunk_id": 115,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Choose Amazon Elastic Container Service (Amazon ECS) for the\nrecommendation model, as it provides container orchestration for\nlarge-scale, batch processing workloads with tight integration\ninto other AWS services - Amazon ECS is a good choice for\ncontainerized workloads but is generally more appropriate for\nbatch processing or large-scale, stateless applications. It might\nnot provide the low-latency and real-time capabilities needed for\nthe recommendation model.\nDeploy all models using Amazon SageMaker endpoints for\nconsistency and ease of management, regardless of their\nindividual requirements for scalability, latency, or integration -\nDeploying all models using Amazon SageMaker endpoints\nwithout considering their specific requirements for latency,\nscalability, and integration would be suboptimal. While\nSageMaker endpoints are highly versatile, they may not be the\nbest fit for every use case, especially for models requiring",
+    "chunk_id": 116,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "scalability, and integration would be suboptimal. While\nSageMaker endpoints are highly versatile, they may not be the\nbest fit for every use case, especially for models requiring\nserverless architecture or advanced container orchestration.\nReferences:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/realtime-\nendpoints.html\nhttps://aws.amazon.com/blogs/containers/deploy-generative-ai-\nmodels-on-amazon-eks/\nDomain\nDeployment and Orchestration of ML Workflows\nQuestion 60\nIncorrect\nA financial services company is building a customer churn\nprediction model on AWS. The dataset includes call logs,\ncustomer interaction history, and transactional data from an on-\npremises PostgreSQL database. The call logs and interaction\nhistory are stored in Amazon S3, while the PostgreSQL tables\nremain on-premises. The data science team needs to aggregate\nand preprocess data from these various sources to ensure it is\nready for machine learning model training. They must also",
+    "chunk_id": 117,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "resolve challenges such as feature inconsistencies and ensure\nschema alignment across the data sources.\nWhich AWS service or feature can efficiently connect and\naggregate the data from these sources?\nCorrect answer\nUse AWS Lake Formation to aggregate and centrally manage the\ndata from S3 and on-premises PostgreSQL for seamless access\nand integration\nYour answer is incorrect\nUse Amazon SageMaker Data Wrangler to connect, aggregate,\nand preprocess the data\nUse AWS Database Migration Service (DMS) to transfer and\npreprocess data for ML training\nUse Amazon EMR Spark jobs to preprocess and aggregate the\ndata directly from S3 and on-premises sources for ML model\ntraining\nOverall explanation\nCorrect option:\nUse AWS Lake Formation to aggregate and centrally manage the\ndata from S3 and on-premises PostgreSQL for seamless access\nand integration\nAWS Lake Formation is specifically designed for aggregating and\nmanaging large datasets from various sources, including Amazon",
+    "chunk_id": 118,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "and integration\nAWS Lake Formation is specifically designed for aggregating and\nmanaging large datasets from various sources, including Amazon\nS3, databases, and other on-premises or cloud-based sources. It\nsimplifies the process of:\nIntegrating data from various locations.\nCataloging the data in a centralized data lake.\nManaging permissions and security for the aggregated dataset.\nAWS Lake Formation supports connecting to on-premises\nPostgreSQL databases and Amazon S3, making it the best\nchoice for aggregating transaction logs, customer profiles, and",
+    "chunk_id": 119,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "database tables. Additionally, the centralized data lake can be\nused for further analysis and ML training.\nvia - https://docs.aws.amazon.com/lake-formation/latest/dg/\nwhat-is-lake-formation.html\nIncorrect options:\nUse Amazon SageMaker Data Wrangler to connect, aggregate,\nand preprocess the data - While SageMaker Data Wrangler is\ngreat for data preparation, it does not perform large-scale ETL\noperations or automate schema inference from on-premises\ndatabases. AWS Lake Formation is better suited for aggregating\nraw data from multiple sources.\nUse AWS Database Migration Service (DMS) to transfer and\npreprocess data for ML training - AWS DMS is used to migrate\ndata from on-premises databases to AWS services, but it does\nnot include preprocessing or schema alignment functionalities\nneeded for ML model training.\nUse Amazon EMR Spark jobs to preprocess and aggregate the\ndata directly from S3 and on-premises sources for ML model",
+    "chunk_id": 120,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "training - While Amazon EMR with Spark can preprocess and\naggregate data, it requires significant manual configuration and\nmanagement. Compared to AWS Lake Formation, it introduces\noperational overhead and complexity, which is not ideal for\nsimpler workflows requiring schema inference and automated\nintegration.\nReferences:\nhttps://docs.aws.amazon.com/lake-formation/latest/dg/what-is-\nlake-formation.html\nhttps://docs.aws.amazon.com/emr/latest/ManagementGuide/\nemr-what-is-emr.html\nDomain\nData Preparation for Machine Learning (ML)\nQuestion 61\nIncorrect\nYou are working on a machine learning project for a financial\nservices company, developing a model to predict credit risk. After\ndeploying the initial version of the model using Amazon\nSageMaker, you find that its performance, measured by the AUC\n(Area Under the Curve), is not meeting the company’s accuracy\nrequirements. Your team has gathered more data and believes\nthat the model can be further optimized.",
+    "chunk_id": 121,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "(Area Under the Curve), is not meeting the company’s accuracy\nrequirements. Your team has gathered more data and believes\nthat the model can be further optimized.\nYou are considering various methods to improve the model’s\nperformance, including feature engineering, hyperparameter\ntuning, and trying different algorithms. However, given the limited\ntime and computational resources, you need to prioritize the\nmost impactful strategies.\nWhich of the following approaches are the MOST LIKELY to lead\nto a significant improvement in model performance? (Select two)\nSwitch to a more complex algorithm, such as deep learning, and\nuse transfer learning to leverage pre-trained models\nCorrect selection",
+    "chunk_id": 122,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use Amazon SageMaker Debugger to debug and improve model\nperformance by addressing underlying problems such as\noverfitting, saturated activation functions, and vanishing\ngradients\nYour selection is incorrect\nPerform hyperparameter tuning using Bayesian optimization and\nincrease the number of trials to explore a broader search space\nIncrease the size of the training dataset by incorporating\nsynthetic data and then retrain the existing model\nYour selection is correct\nFocus on feature engineering by creating domain-specific\nfeatures and use SageMaker Clarify to evaluate feature\nimportance\nOverall explanation\nCorrect options:\nFocus on feature engineering by creating domain-specific\nfeatures and use SageMaker Clarify to evaluate feature\nimportance\nFeature engineering is one of the most effective ways to boost\nmodel performance, particularly in domain-specific applications\nlike credit risk modeling. By creating more informative features,",
+    "chunk_id": 123,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Feature engineering is one of the most effective ways to boost\nmodel performance, particularly in domain-specific applications\nlike credit risk modeling. By creating more informative features,\nyou can provide the model with better signals for prediction.\nSageMaker Clarify can be used to evaluate feature importance,\nhelping you identify the most impactful features and further refine\nthe model.",
+    "chunk_id": 124,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://aws.amazon.com/sagemaker/clarify/\nUse Amazon SageMaker Debugger to debug and improve model\nperformance by addressing underlying problems such as\noverfitting, saturated activation functions, and vanishing\ngradients\nA machine learning (ML) training job can have problems such as\noverfitting, saturated activation functions, and vanishing\ngradients, which can compromise model performance.\nSageMaker Debugger provides tools to debug training jobs and\nresolve such problems to improve the performance of your\nmodel. Debugger also offers tools to send alerts when training\nanomalies are found, take actions against the problems, and\nidentify the root cause of them by visualizing collected metrics\nand tensors.\nSageMaker Debugger:",
+    "chunk_id": 125,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://docs.aws.amazon.com/sagemaker/latest/dg/train-\ndebugger.html\nIncorrect options:\nIncrease the size of the training dataset by incorporating\nsynthetic data and then retrain the existing model - Increasing\nthe size of the dataset with synthetic data can improve model\nperformance, but it also introduces the risk of adding noise or\nbias if the synthetic data is not carefully generated. This\napproach may not guarantee a significant performance boost\nunless the original dataset was severely lacking in size.\nSwitch to a more complex algorithm, such as deep learning, and\nuse transfer learning to leverage pre-trained models - Switching\nto a more complex algorithm or using transfer learning could\nimprove performance, but it also increases the risk of overfitting,\nespecially if the new algorithm is not well suited to the data.\nAdditionally, deep learning models require more data and tuning,\nwhich may not be feasible given the time and resource\nconstraints.",
+    "chunk_id": 126,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "especially if the new algorithm is not well suited to the data.\nAdditionally, deep learning models require more data and tuning,\nwhich may not be feasible given the time and resource\nconstraints.\nPerform hyperparameter tuning using Bayesian optimization and\nincrease the number of trials to explore a broader search space -\nHyperparameter tuning, especially using Bayesian optimization,\ncan help optimize the model’s performance, but the gains might\nbe marginal if the underlying features are not informative. It’s a\nvaluable approach, but may not be the most impactful first step.\nReferences:",
+    "chunk_id": 127,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "https://docs.aws.amazon.com/sagemaker/latest/dg/train-\ndebugger.html\nhttps://aws.amazon.com/sagemaker/clarify/\nDomain\nML Model Development\nQuestion 63\nIncorrect\nA retail company has deployed a machine learning (ML) model\nusing Amazon SageMaker to forecast product demand. The\nmodel is exposed via a SageMaker endpoint that processes\nrequests from multiple applications. The company needs to\nrecord and monitor all API call events made to the endpoint and\nreceive a notification whenever the number of requests exceeds\na specific threshold during peak traffic hours.\nWhich solution will meet these requirements?\nYour answer is incorrect\nEnable AWS CloudTrail to log all SageMaker API call events and\nuse CloudTrail Insights to send notifications when the API call\nvolume exceeds a threshold\nUse SageMaker Model Monitor to capture and analyze endpoint\ntraffic and configure a rule to notify when API calls exceed the\nspecified threshold\nUse Amazon EventBridge to capture SageMaker API call events",
+    "chunk_id": 128,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "traffic and configure a rule to notify when API calls exceed the\nspecified threshold\nUse Amazon EventBridge to capture SageMaker API call events\nand configure a rule to send a notification when the event count\nbreaches the threshold\nCorrect answer\nUse Amazon CloudWatch to monitor the API call metrics for the\nSageMaker endpoint and create an alarm to send notifications\nthrough Amazon SNS when the call count breaches the threshold\nOverall explanation\nCorrect option:",
+    "chunk_id": 129,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use Amazon CloudWatch to monitor the API call metrics for the\nSageMaker endpoint and create an alarm to send notifications\nthrough Amazon SNS when the call count breaches the threshold\nAmazon CloudWatch is the most suitable solution for this\nscenario because it provides:\nMetrics for API call counts - CloudWatch automatically collects\ninvocation metrics for SageMaker endpoints, including\nInvocations, InvocationErrors, and Latency.\nAlarms - Alarms can be created to monitor thresholds for metrics,\nsuch as the number of API calls.\nNotifications - When a threshold is breached, the alarm can send\nnotifications through Amazon Simple Notification Service (SNS).",
+    "chunk_id": 130,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://docs.aws.amazon.com/sagemaker/latest/dg/\nmonitoring-cloudwatch.html\nIncorrect options:\nEnable AWS CloudTrail to log all SageMaker API call events and\nuse CloudTrail Insights to send notifications when the API call\nvolume exceeds a threshold - AWS CloudTrail logs API calls for\nauditing purposes and can detect unusual activity using\nCloudTrail Insights. However, it is not designed for threshold-\nbased alarms.",
+    "chunk_id": 131,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Use SageMaker Model Monitor to capture and analyze endpoint\ntraffic and configure a rule to notify when API calls exceed the\nspecified threshold - SageMaker Model Monitor is used to track\ndata quality, bias, and drift for endpoint traffic. It does not\nnatively monitor API call metrics or provide mechanisms for\ntriggering notifications based on call counts.\nUse Amazon EventBridge to capture SageMaker API call events\nand configure a rule to send a notification when the event count\nbreaches the threshold - EventBridge is suitable for capturing\nand routing specific event patterns, but it does not aggregate or\nmonitor API metrics over time. It lacks the capability to set\nthresholds or alarms for continuous monitoring.\nReference:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-\ncloudwatch.html\nDomain\nML Solution Monitoring, Maintenance, and Security\nQuestion 64\nIncorrect\nAn ML engineer is training a time series forecasting model using",
+    "chunk_id": 132,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "cloudwatch.html\nDomain\nML Solution Monitoring, Maintenance, and Security\nQuestion 64\nIncorrect\nAn ML engineer is training a time series forecasting model using\na recurrent neural network (RNN) to predict electricity demand for\na utility company. The model is trained using stochastic gradient\ndescent (SGD) as the optimizer. During training, the engineer\nnotices the following:\nThe training loss and validation loss remain high.\nThe loss values oscillate, decreasing for a few epochs and then\nincreasing again before repeating the cycle.\nThe ML engineer needs to resolve this issue to stabilize the\ntraining process and improve model performance. What should\nthe ML engineer do to improve the training process?\nYour answer is incorrect\nApply dropout regularization to the RNN layers to improve\ngeneralization and reduce oscillations in the loss",
+    "chunk_id": 133,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Increase the number of training epochs to give the model more\ntime to learn the patterns in the data\nIncrease the learning rate to allow the gradient updates to\nconverge more smoothly and prevent oscillations in the loss\nvalues\nCorrect answer\nReduce the learning rate to allow the gradient updates to\nconverge more smoothly and prevent oscillations in the loss\nvalues\nOverall explanation\nCorrect option:\nReduce the learning rate to allow the gradient updates to\nconverge more smoothly and prevent oscillations in the loss\nvalues\nThe oscillating pattern of the loss values during training and\nvalidation suggests that the learning rate is too high. When the\nlearning rate is large:\nThe gradient updates overshoot the optimal solution, causing\nloss values to oscillate instead of converging.\nTraining cannot settle into a local minimum, resulting in poor\nperformance on the test set.\nBy reducing the learning rate, the gradient updates become\nsmaller, allowing the model to converge more smoothly and",
+    "chunk_id": 134,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "performance on the test set.\nBy reducing the learning rate, the gradient updates become\nsmaller, allowing the model to converge more smoothly and\nstabilize the training process. This will help the loss values\ndecrease steadily over time.\nIncorrect options:\nApply dropout regularization to the RNN layers to improve\ngeneralization and reduce oscillations in the loss - Dropout\nregularization helps reduce overfitting, but the described issue is\na training instability problem caused by a high learning rate.\nIncrease the learning rate to allow the gradient updates to\nconverge more smoothly and prevent oscillations in the loss\nvalues - Increasing the learning rate would further exacerbate the",
+    "chunk_id": 135,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "problem. Too large a learning rate might prevent the weights from\napproaching the optimal solution.\nIncrease the number of training epochs to give the model more\ntime to learn the patterns in the data - Increasing epochs won’t\nresolve oscillations caused by a high learning rate. The model will\ncontinue to oscillate without convergence.\nReference:\nhttps://docs.aws.amazon.com/machine-learning/latest/dg/\ntraining-parameters1.html\nDomain\nML Model Development\nQuestion 65\nIncorrect\nYou are a data scientist at a healthcare company developing a\nmachine learning model to analyze medical imaging data, such\nas X-rays and MRIs, for disease detection. The dataset consists\nof 10 million high-resolution images stored in Amazon S3,\namounting to several terabytes of data. The training process\nrequires processing these images efficiently to avoid delays due\nto I/O bottlenecks, and you must ensure that the chosen data\naccess method aligns with the large dataset size and the high",
+    "chunk_id": 136,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "requires processing these images efficiently to avoid delays due\nto I/O bottlenecks, and you must ensure that the chosen data\naccess method aligns with the large dataset size and the high\nthroughput requirements of the model.\nGiven the size and nature of the dataset, which SageMaker input\nmode and AWS Cloud Storage configuration is the MOST\nSUITABLE for this use case?\nCorrect answer\nSelect the Pipe input mode to stream the data directly from\nAmazon S3 to the training instances, allowing the model to start\nprocessing data immediately without requiring local storage for\nthe entire dataset\nUse the File input mode to download the entire dataset from\nAmazon S3 to the training instances' local storage before starting",
+    "chunk_id": 137,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "the training process, ensuring that all data is available locally\nduring training\nUse the File input mode with EFS (Amazon Elastic File System) to\nmount the dataset across multiple instances, ensuring data is\nshared and accessible during distributed training\nYour answer is incorrect\nImplement the FastFile input mode with FSx for Lustre, to enable\non-demand streaming of data chunks from Amazon S3 with low\nlatency and high throughput\nOverall explanation\nCorrect option:\nSelect the Pipe input mode to stream the data directly from\nAmazon S3 to the training instances, allowing the model to start\nprocessing data immediately without requiring local storage for\nthe entire dataset\nIn pipe mode, data is pre-fetched from Amazon S3 at high\nconcurrency and throughput, and streamed into a named pipe,\nwhich also known as a First-In-First-Out (FIFO) pipe for its\nbehavior. Each pipe may only be read by a single process.\nPipe input mode is designed for large datasets, allowing data to",
+    "chunk_id": 138,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "which also known as a First-In-First-Out (FIFO) pipe for its\nbehavior. Each pipe may only be read by a single process.\nPipe input mode is designed for large datasets, allowing data to\nbe streamed directly from Amazon S3 into the training instances.\nThis minimizes disk usage and allows training to begin\nimmediately as the data streams in, making it ideal for your\nscenario where high throughput and efficiency are critical.",
+    "chunk_id": 139,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "via - https://docs.aws.amazon.com/sagemaker/latest/dg/model-\naccess-training-data.html",
+    "chunk_id": 140,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "Incorrect options:\nUse the File input mode to download the entire dataset from\nAmazon S3 to the training instances' local storage before starting\nthe training process, ensuring that all data is available locally\nduring training - The File input mode downloads the entire\ndataset to the training instance before starting the training job.\nFor a dataset as large as yours, this would lead to significant\ndelays and require large amounts of local storage, which is not\noptimal for efficiency or cost.\nImplement the FastFile input mode with FSx for Lustre, to enable\non-demand streaming of data chunks from Amazon S3 with low\nlatency and high throughput - FastFile mode is useful for\nscenarios where you need rapid access to data with low latency,\nbut it is best suited for workloads with many small files. You\nshould note that FastFile mode can be used only while accessing\ndata from Amazon S3 and not with Amazon FSx for Lustre. So,\nthis option acts as a distractor.",
+    "chunk_id": 141,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  },
+  {
+    "text": "should note that FastFile mode can be used only while accessing\ndata from Amazon S3 and not with Amazon FSx for Lustre. So,\nthis option acts as a distractor.\nUse the File input mode with EFS (Amazon Elastic File System) to\nmount the dataset across multiple instances, ensuring data is\nshared and accessible during distributed training - Using Amazon\nEFS for the given use case requires transferring the medical\nimaging data from Amazon S3 into Amazon EFS, which leads to\nunnecessary data transfer as well as data storage costs. So, this\noption is ruled out.\nReferences:\nhttps://docs.aws.amazon.com/sagemaker/latest/dg/model-\naccess-training-data.html\nhttps://aws.amazon.com/about-aws/whats-new/2021/10/\namazon-sagemaker-fast-file-mode/\nDomain\nData Preparation for Machine Learning (ML)",
+    "chunk_id": 142,
+    "metadata": {
+      "source": "aws_certification_guide",
+      "doc_type": "study_guide",
+      "filename": "incorrect answers exam 1 review.pdf"
+    }
+  }
+]
